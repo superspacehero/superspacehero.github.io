@@ -16,48 +16,17 @@ body
 
 @media screen and (max-width: 640px)
 {
-	.header a
+	.hero-image
 	{
-		float: none;
-		display: inline-block;
-		text-align: left;
-	}
-
-	.header a.icon
-	{
-		
-	}
-
-	.header-right
-	{
-		float: none;
-	}
-
-	.header #myLinks
-	{
-		display: none;
+		background-attachment:scroll, scroll;
 	}
 }
 
 @media screen and (min-width: 641px)
 {
-	.header #myLinks
+	.hero-image
 	{
-		display: inline-block;
-	}
-
-	a:hover
-	{
-		transform: scale(1.05);
-	}
-
-	.header a.active:hover {
-		color: #ffe176;
-	}
-
-	.header a:hover
-	{
-		color: #ffd53a;
+		background-attachment:scroll, fixed;
 	}
 }
 
