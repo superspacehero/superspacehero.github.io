@@ -3,7 +3,7 @@ html
 	scroll-behavior: smooth;
 }
 
-body:not(hero-title)
+body
 {
 	margin: 0;
 	font-family: Helvetica;
@@ -135,6 +135,7 @@ a.anchor
 	line-height:1em;
 	position: relative;
 	top: 80vh;
+	text-align: left;
 }
 
 .hero-title.subtitle
@@ -174,6 +175,7 @@ a.nav.home
 div.intro
 {
 	overflow:hidden;
+	text-align: left;
 }
 
 div.intro.container
