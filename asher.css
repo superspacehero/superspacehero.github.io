@@ -19,6 +19,7 @@ body
 	.hero-image
 	{
 		background-attachment:scroll, scroll;
+		background-size:contain, contain;
 	}
 }
 
@@ -27,6 +28,7 @@ body
 	.hero-image
 	{
 		background-attachment:scroll, fixed;
+		background-size:contain, cover;
 	}
 }
 
