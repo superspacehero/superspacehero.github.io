@@ -3,6 +3,17 @@ html
 	scroll-behavior: smooth;
 }
 
+body:not(hero-title)
+{
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 1.5em;
+	color:#ffb300;
+	background-color: #12001e;
+	text-shadow:0.4rem 0.4rem 0.8rem #25003e80;
+	text-align: center;
+}
+
 @media screen and (max-width: 640px)
 {
 	.header a
@@ -50,15 +61,8 @@ html
 	}
 }
 
-body {
-	margin: 0;
-	font-family: Helvetica;
-	font-size: 1.5em;
-	color:#ffb300;
-	text-shadow:0.4rem 0.4rem 0.8rem #25003e80;
-}
-
-.container-width {
+.container-width
+{
 	width:90%;
 	max-width:1150px;
 	margin:0 auto 0 0;
@@ -107,7 +111,8 @@ a.anchor
 	visibility: hidden;
 }
 
-.hero-image {
+.hero-image
+{
 	/* font-weight:100; */
 	background-image: linear-gradient(to right, #000a 0%, #0002 50%), url(/avt217/Opa-Opa.gif);
 	background-attachment:scroll, fixed;
@@ -121,7 +126,8 @@ a.anchor
 	overflow: hidden;
 }
 
-.hero-title {
+.hero-title
+{
 	display: block;
 	margin: 0 0 0 5vmin;
 	font-size:10vmin;
@@ -131,11 +137,13 @@ a.anchor
 	top: 80vh;
 }
 
-.hero-title.subtitle {
+.hero-title.subtitle
+{
 	font-size:5vmin;
 }
 
-.navbar {
+.navbar
+{
 	width:100%;
 	position:fixed;
 	bottom:100%;
@@ -145,31 +153,37 @@ a.anchor
 	height:8vh;
 }
 
-.links {
+.links
+{
     display: grid;
     grid-auto-flow: column;
     line-height: 0;
     padding: 3rem 0rem 0 3rem;
 }
 
-a.nav {
+a.nav
+{
 	font-size: 3vmin;
 	text-align: center;
 }
-a.nav.home {
+a.nav.home
+{
     font-size: 5vmin;
 }
 
-div.intro {
+div.intro
+{
 	overflow:hidden;
 }
 
-div.intro.container {
+div.intro.container
+{
 	animation-name:intro;
 	animation-duration:3.58s;
 }
 
-div.intro.split {
+div.intro.split
+{
 	width:100%;
 	height:50%;
 	position:absolute;
@@ -179,79 +193,99 @@ div.intro.split {
 	animation-fill-mode:forwards;
 }
 
-div.intro.split.p1 {
-background-color:black;
+div.intro.split.p1
+{
+	background-color:black;
 }
-div.intro.split.p1.top{
+div.intro.split.p1.top
+{
+	top:0%;
+}
+div.intro.split.p1.bottom
+{
+	bottom:0%;
+}
+div.intro.split.p2
+{
+	background-color:#4160B4;
+	animation-delay:0.1s;
+}
+div.intro.split.p2.top
+{
+	top:0%;
+}
+div.intro.split.p2.bottom
+{
+	bottom:0%;
+}
+div.intro.split.p3
+{
+	background-color:#F6502D;
+	animation-delay:0.16s;
+}
+div.intro.split.p3.top
+{
+	top:0%;
+}
+div.intro.split.p3.bottom
+{
+	bottom:0%;
+}
+div.intro.split.p4
+{
+	background-color:#F48E16;
+	animation-delay:0.28s;
+}
+div.intro.split.p4.top
+{
 top:0%;
 }
-div.intro.split.p1.bottom{
-bottom:0%;
+div.intro.split.p4.bottom
+{
+	bottom:0%;
 }
-div.intro.split.p2{
-background-color:#4160B4;
-animation-delay:0.1s;
+div.intro.split.p5
+{
+	background-color:#63C3A6;
+	animation-delay:0.36s;
 }
-div.intro.split.p2.top{
-top:0%;
+div.intro.split.p5.top
+{
+	top:0%;
 }
-div.intro.split.p2.bottom{
-bottom:0%;
+div.intro.split.p5.bottom
+{
+	bottom:0%;
 }
-div.intro.split.p3{
-background-color:#F6502D;
-animation-delay:0.16s;
+svg.intro
+{
+	overflow:hidden;
+	position:fixed;
+	top:0%;
+	bottom:0%;
+	width:100%;
+	height:100%;
+	animation-fill-mode:forwards;
+	animation-timing-function:ease;
 }
-div.intro.split.p3.top{
-top:0%;
+svg.intro.split
+{
+	fill:#F5CA00;
+	animation-duration:0.27s;
+	animation-delay:2.38s;
 }
-div.intro.split.p3.bottom{
-bottom:0%;
-}
-div.intro.split.p4{
-background-color:#F48E16;
-animation-delay:0.28s;
-}
-div.intro.split.p4.top{
-top:0%;
-}
-div.intro.split.p4.bottom{
-bottom:0%;
-}
-div.intro.split.p5{
-background-color:#63C3A6;
-animation-delay:0.36s;
-}
-div.intro.split.p5.top{
-top:0%;
-}
-div.intro.split.p5.bottom{
-bottom:0%;
-}
-svg.intro{
-overflow:hidden;
-position:fixed;
-top:0%;
-bottom:0%;
-width:100%;
-height:100%;
-animation-fill-mode:forwards;
-animation-timing-function:ease;
-}
-svg.intro.split{
-fill:#F5CA00;
-animation-duration:0.27s;
-animation-delay:2.38s;
-}
-svg.intro.split.left{
+svg.intro.split.left
+{
 animation-name:introSplitLeft;
 left:0%;
 }
-svg.intro.split.right{
+svg.intro.split.right
+{
 animation-name:introSplitRight;
 right:0%;
 }
-svg.intro.slant{
+svg.intro.slant
+{
 transform:translate(50%,100%);
 animation-duration:3.58s;
 }
@@ -424,21 +458,21 @@ transform:translate(200%,0%);
 }
 }
 @keyframes introTextWhite{
-0%{
-transform:translate(100%,-15%) scaleX(-1);
-}
-7%{
-transform:translate(-100%,-15%) scaleX(-1);
-}
-15.3%{
-transform:translate(-100%,0%) scaleX(1);
-}
-20%{
-transform:translate(0%,0%);
-}
-91.6%{
-transform:translate(0%,0%);
-}
-100%{
-transform:translate(-200%,0%);
+	0%{
+	transform:translate(100%,-15%) scaleX(-1);
+	}
+	7%{
+	transform:translate(-100%,-15%) scaleX(-1);
+	}
+	15.3%{
+	transform:translate(-100%,0%) scaleX(1);
+	}
+	20%{
+	transform:translate(0%,0%);
+	}
+	91.6%{
+	transform:translate(0%,0%);
+	}
+	100%{
+	transform:translate(-200%,0%);
 }
