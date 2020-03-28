@@ -3,100 +3,109 @@
 	<head> 
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 		<title>Asher Pinson - Portfolio</title>
-		<link rel="stylesheet" href="asher.css" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="https://kit.fontawesome.com/da13be3499.js" crossorigin="anonymous"></script>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
 	</head> 
 
 	<body>
-		<header id="HeroImage" class="hero-image">			
-			<h1 id="HeroTitle" class="hero-title">Asher Pinson</h1>
-			<h2 id="HeroSubtitle" class="hero-title subtitle">Game Programmer</h2>
-		</header>
-		
-		<iframe src="/navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-		
-		<section id="portfolio">
-			<h1>Portfolio</h1>
+		<section class="flex-sect">
+			<div class="fillrect gradient left"></div>
+				
+			<div class="flex-title left">
+				<div class="vertical-center">
+					<h1 id="HeroTitle" class="hero-title">Asher Pinson</h1>
+					<h2 id="HeroSubtitle" class="hero-title subtitle">Game Programmer</h2>
+				</div>
+			</div>
 			
-			<a href="https://superspacehero.com/private/176930745251/tumblr_pddh2ybGon1uwq176">
-				<video loop="1" autoplay="1" muted="1"><source src="https://thumbs.gfycat.com/DecimalPlayfulFruitfly-mobile.mp4" type="video/mp4"></source>
+			<video class="fillrect" loop="1" autoplay="1" muted="1">
+				<source src="img/Hero.mp4" type="video/mp4"></source>
 				Action-Command Battle System
-				</video>
-				<h2>Action-Command Battle System</h2>
-				<p>A battle system that uses Unity's Mecanim animator for attacks.</p>
-			</a>
-
-			<a href="https://superspacehero.com/private/176955147511/tumblr_pdereavJII1uwq176">
-				<video loop="1" autoplay="1" muted="1"><source src="https://thumbs.gfycat.com/ImprobableMediocreBlacklemur-mobile.mp4" type="video/mp4"></source>
-				Group-Based AI
-				</video>
-				<h2>Group-Based AI</h2>
-				<p>Characters that work together to find and chase a spotted target.</p>
-			</a>
-
-			<a href="https://superspacehero.com/TouchPlatform">
-				<video loop="1" autoplay="1" muted="1"><source src="https://thumbs.gfycat.com/PlushBlindHuia-mobile.mp4" type="video/mp4"></source>
-				Touch-Based Platforming
-				</video>
-				<h2>Touch-Based Platforming</h2>
-				<p>Simple controls performed entirely with taps on the screen.<br>Made for a gamejam.</p>
-			</a>
+			</video>
+		</section>
+		
+		<section class="flex-sect row" id="portfolio">
+		  <a class="cell secondary-buttons story">
+			<p class="secondary-buttons-text flex-title-text">Starbot Showdown</p>
+		  </a>
+		  <a class="cell secondary-buttons careers">
+			<p class="secondary-buttons-text flex-title-text">Action-Command Battle System</p>
+		  </a>
+		  <a class="cell secondary-buttons nutrition">
+			<p class="secondary-buttons-text flex-title-text">Group-Based AI</p>
+		  </a>
+		</section>
+		
+		<section class="flex-sect">
+			
+			<video class="fillrect" loop="1" autoplay="1" muted="1">
+				<source src="img/Hero.webm" type="video/webm"></source>
+				Action-Command Battle System
+			</video>
+			
+			<div class="fillrect gradient left"></div>
+				
+			<div class="flex-title left">
+				<div class="vertical-center">
+					<h1 id="HeroTitle" class="hero-title">Asher Pinson</h1>
+					<h2 id="HeroSubtitle" class="hero-title subtitle">Game Programmer</h2>
+				</div>
+			</div>
 		</section>
 
-		<iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-		
-		<div class="intro container">
-			<svg class="intro split left" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon points="0,0 0,100 76,100 26,0"/>
-			</svg>
+		<footer>
+			<div class="row footer">
+				<div class="cell footer-links">
+					<div class="row footer-links">
+						<a class="cell footer-text links">Policies</a>
+						<a class="cell footer-text links">Terms of Use</a>
+						<a class="cell footer-text links">Accessibility</a>
+						<a class="cell footer-text links">Contact Us</a>
+						<a class="cell footer-text links">Sitemap</a>
+					</div>
+				</div>
+				
+				<div class="cell footer-social">
+					<div class="row footer-links">
+						<a class="cell footer-text links social" href="https://github.com/superspacehero"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-copyright">
+				<div class="footer-text copyright">
+					©  
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script> Asher Pinson
+				</div>
+			</div>
+		</footer>
 
-			<svg class="intro split right" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon points="24,0 74,100 100,100 100,0"/>
-			</svg>
-
-			<svg class="intro slant orange" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon points="12.37,30.88 42.37,30.88 81.25,100 51.25,100"/>
-			</svg>
-
-			<svg class="intro slant cyan" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon points="54.65,46.61 62.15,46.61 92.18,100 84.69,100"/>
-			</svg>
-
-			<svg class="intro slant blue" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon points="14.37,0 29.37,0 85.63,100 70.63,100"/>
-			</svg>
-
-			<svg class="intro slant red" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<polygon points="14.26,57.59 44.27,57.59 68.13,100 38.13,100"/>
-			</svg>
-
-
-			<div class="intro split p5 top"></div>
-			<div class="intro split p5 bottom"></div>
-
-			<div class="intro split p4 top"></div>
-			<div class="intro split p4 bottom"></div>
-
-			<div class="intro split p3 top"></div>
-			<div class="intro split p3 bottom"></div>
-
-			<div class="intro split p2 top"></div>
-			<div class="intro split p2 bottom"></div>
-
-			<div class="intro split p1 top"></div>
-			<div class="intro split p1 bottom"></div>
-
-
-			<svg class="intro text black" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-				<polygon points="16.41,64.17 61.56,64.17 65.63,71.39 20.47,71.39" fill="black"/>
-				<text text-anchor="middle" fill="#ffffff" font-size="7" font-family="Helvetica" x="38.985%" y="67%">Asher Pinson</text>
-			</svg>
-
-			<svg class="intro text white" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-				<polygon points="35.52,77.5 63.49,77.5 65.68,81.39 37.71,81.39" fill="#ffffff"/>
-				<text text-anchor="middle" fill="black" paint-order="stroke" stroke="#ffffff" stroke-width="0.1em" stroke-linecap="butt" stroke-linejoin="miter" font-size="3" font-family="Helvetica" x="49.505%" y="79%">Game Programmer</text>
-			</svg>
+		<div class="row navbar">
+			<a href="" class="cell logo">
+				<img class="icon" src="icon.jpg"/></img>
+				<p class="logo-text">Asher Pinson</p>
+			</a>
+			<nav class="row cell navbar-links">
+				<a href="#portfolio" class="cell navbar-link-items">
+					Portfolio
+				</a>
+				<a href="#about" class="cell navbar-link-items">
+					About Me
+				</a>
+				<a class="cell navbar-link-items">
+					Resume
+				</a>
+				<a class="cell navbar-link-items">
+					Contact
+				</a>
+			</nav>
 		</div>
 	</body>
-
-	
 </html>
