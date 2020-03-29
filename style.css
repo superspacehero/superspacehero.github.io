@@ -58,9 +58,10 @@ a:active, button:active {
 
 .hero-title
 {
+	font-size: calc(4vmin + 4vmax);
+	
 	display: block;
 	margin: 0 0 0 5vmin;
-	font-size:10vmin;
 	font-family:Arial Black, Gadget, sans-serif;
 	line-height:1em;
 	position: relative;
@@ -71,7 +72,7 @@ a:active, button:active {
 
 .hero-title.subtitle
 {
-	font-size:5vmin;
+	font-size: calc(2vmin + 2vmax);
 }
 
 .flex-sect {
@@ -85,7 +86,7 @@ a:active, button:active {
 	position: absolute;
 	font-weight: 700;
 	padding: 0;
-	width: 60%;
+	width: 100%;
 	text-align: left;
 }
 
@@ -129,12 +130,13 @@ a:active, button:active {
 
 
 .fillrect {
+	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
-    width: 100vw;
 }
 
 video.fillrect {
+	object-fit: contain;
 	background-color: black;
 }
 
@@ -218,13 +220,7 @@ video.fillrect {
 }
 
 
-.footer{
-	font-size: calc(0.65vmin + 0.65vmax);
-	padding-top: 1.5rem;
-	padding-bottom: 1rem;
-	display: flex;
-	align-items: center;
-	
+footer{
   	scroll-snap-align: start;
 }
 
@@ -431,6 +427,18 @@ video.fillrect {
 	background-position: center center, left center;
 }
 
+/* @media (orientation: portrait) { */
+	/* .fillrect { */
+		/* height: 100vw; */
+	/* } */
+/* } */
+
+/* @media (orientation: landscape) { */
+	/* .fillrect { */
+		/* width: 100vw; */
+	/* } */
+/* } */
+
 @media (max-height: 1440px) {
 	.menu-item {
 		text-align: left;
@@ -442,18 +450,19 @@ video.fillrect {
 @media (max-width: 1280px) {
 	
 	.flex-title {
-		width: 50%;
+		width: 100%;
 	}
 
 	.logo {
 		flex-basis: 70%;
 	}
+
+	video.fillrect {
+		transform: translateX(-50vw);
+	}
 }
 
 @media (max-width: 768px) {
-	.flex-title {
-		width: 60%;
-	}
 	
 	.home.hero {
 		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
