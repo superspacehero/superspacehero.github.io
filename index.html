@@ -28,16 +28,16 @@
 		</section>
 		
 		<section class="flex-sect row" id="portfolio">
-			<a class="cell secondary-buttons">
-				<video class="secondary-video" loop="1" autoplay="1" muted="1"><source src="img/Battle.webm" type="video/webm" alt="Action-Command Battle System"></source></video>
+			<a href="starbot" class="cell secondary-buttons">
+				<video class="secondary-video" loop="1" autoplay="1" muted="1"><source src="img/BattleButton.webm" type="video/webm" alt="Action-Command Battle System"></source></video>
 				<p class="secondary-buttons-text flex-title-text">Starbot Showdown</p>
 			</a>
-			<a class="cell secondary-buttons">
+			<a href="action" class="cell secondary-buttons">
 				<video class="secondary-video" loop="1" autoplay="1" muted="1"><source src="img/BattleButton.webm" type="video/webm" alt="Action-Command Battle System"></source></video>
 				<p class="secondary-buttons-text flex-title-text">Action-Command Battle System</p>
 			</a>
-			<a class="cell secondary-buttons">
-				<video class="secondary-video" loop="1" autoplay="1" muted="1"><source src="img/Stealth.webm" type="video/webm" alt="Action-Command Battle System"></source></video>
+			<a href="group" class="cell secondary-buttons">
+				<video class="secondary-video" loop="1" autoplay="1" muted="1"><source src="img/StealthButton.webm" type="video/webm" alt="Action-Command Battle System"></source></video>
 				<p class="secondary-buttons-text flex-title-text">Group-Based AI</p>
 			</a>
 		</section>
@@ -55,43 +55,9 @@
 				</div>
 			</div>
 		</section>
-
-		<footer>
-			<div class="row footer-copyright">
-				<div class="cell footer-text copyright">
-					© 
-					<script type="text/javascript">
-						document.write(new Date().getFullYear());
-					</script> Asher Pinson
-				</div>
-				
-				<div class="cell footer-social">
-					<div class="row footer-links">
-						<a class="cell footer-text links social" href="https://github.com/superspacehero"><i class="fab fa-github"></i></a>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<div class="row navbar">
-			<a href="#" class="cell logo">
-				<img class="icon" src="icon.jpg"/></img>
-				<p class="logo-text">Asher Pinson</p>
-			</a>
-			<nav class="row cell navbar-links">
-				<a href="#portfolio" class="cell navbar-link-items">
-					Portfolio
-				</a>
-				<a href="#about" class="cell navbar-link-items">
-					About Me
-				</a>
-				<a class="cell navbar-link-items">
-					Resume
-				</a>
-				<a class="cell navbar-link-items">
-					Contact
-				</a>
-			</nav>
-		</div>
+		
+		<iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+		
+		<iframe src="navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 	</body>
 </html>
