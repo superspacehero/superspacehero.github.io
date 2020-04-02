@@ -13,6 +13,8 @@
 	</head> 
 
 	<body>
+		<iframe src="/navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+		
 		<section class="flex-sect">
 			
 			<video class="fillrect" loop="1" autoplay="1" muted="1" poster="img/Hero.png"><source src="img/Hero.mp4" type="video/mp4" alt="Action-Command Battle System"></source></video>
@@ -56,8 +58,6 @@
 			</div>
 		</section>
 		
-		<iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-		
-		<iframe src="navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+		<iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 	</body>
 </html>
