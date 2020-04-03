@@ -4,7 +4,7 @@
 
 html {
     scroll-snap-type: y mandatory;
-	/* scroll-snap-stop: always; */
+	scroll-snap-stop: normal;
 	scroll-behavior: smooth;
 }
 
@@ -102,7 +102,7 @@ a:active, button:active {
 }
 
 .right {
-	right: 5vw;
+	right: 0;
 }
 
 .flex-title-text {
@@ -356,6 +356,7 @@ footer{
 .flex-menu {
 	font-size: calc(1vmin + 1vmax);
 	color: #e6a200;
+	background-image: linear-gradient(to right, #0000 0%, rgba(0, 0, 0, 0.35) 15%, rgba(0, 0, 0, 0.35) 85%, #0000 100%);
 	background-color: #521300;
 	font-weight: 700;
 	display: flex;
@@ -412,6 +413,13 @@ footer{
 
 .menu-note {
 	color: #b37d00;
+}
+
+.menu-background {
+	background-image: url(https://superspacehero.com/avt217/p2/site/menu/img/hamburger.jpg);
+	position: absolute;
+	width: 60%;
+	height: 100%;
 }
 
 
