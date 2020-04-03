@@ -52,8 +52,27 @@
 			</div>
 		</section>
 		
-		<iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+		<iframe src="https://superspacehero.com/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 		
-		<iframe src="/navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.makeLocal();this.remove()"></iframe>
+		<div class="row navbar">
+			<a href="/" class="cell logo">
+				<img class="icon" src="/icon.jpg"/></img>
+				<p class="logo-text">Asher Pinson</p>
+			</a>
+			<nav class="row cell navbar-links">
+				<a href="#portfolio" class="cell navbar-link-items">
+					Portfolio
+				</a>
+				<a href="#about" class="cell navbar-link-items">
+					About Me
+				</a>
+				<a href="#resume" class="cell navbar-link-items">
+					Resume
+				</a>
+				<a href="#contact" class="cell navbar-link-items">
+					Contact
+				</a>
+			</nav>
+		</div>
 	</body>
 </html>
