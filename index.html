@@ -66,6 +66,6 @@
 		
 		<iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 		
-		<iframe src="/navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.makeLocal();this.remove()"></iframe>
+		<iframe src="/navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.contentDocument.makeLocal();this.remove()"></iframe>
 	</body>
 </html>
