@@ -416,7 +416,10 @@ footer{
 }
 
 .menu-background {
-	background-image: url(https://superspacehero.com/avt217/p2/site/menu/img/hamburger.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
 	position: absolute;
 	width: 60%;
 	height: 100%;
@@ -426,27 +429,22 @@ footer{
 
 #burgers {
 	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/hamburger.jpg);
-	background-position: center center, left center;
 }
 
 #dogs {
 	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/hotdog.jpg);
-	background-position: center center, right center;
 }
 
 #sandwiches {
 	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/grilledcheese.jpg);
-	background-position: center center, left center;
 }
 
 #fries {
 	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/sweetpotatofries.jpg);
-	background-position: center center, right center;
 }
 
 #toppings {
 	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/toppings.jpg);
-	background-position: center center, left center;
 }
 
 /* @media (orientation: portrait) { */
