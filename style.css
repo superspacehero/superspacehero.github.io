@@ -357,7 +357,7 @@ footer{
 	font-size: calc(1vmin + 1vmax);
 	color: #e6a200;
 	background-image: linear-gradient(to right, #0000 0%, rgba(0, 0, 0, 0.35) 15%, rgba(0, 0, 0, 0.35) 85%, #0000 100%);
-	background-color: #521300;
+	background-color: #310052;
 	font-weight: 700;
 	display: flex;
 	position: absolute;
@@ -374,7 +374,7 @@ footer{
 
 .menu-panel {
 	height: 100%;
-	background-color: #801d00;
+	background-color: inherit;
 	width: 70%;
 	margin: 0;
 	
