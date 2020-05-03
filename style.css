@@ -3,8 +3,8 @@
 }
 
 html {
-    scroll-snap-type: y mandatory;
-	scroll-snap-stop: normal;
+    scroll-snap-type: y proximity;
+  	/* scroll-snap-stop: always; */
 	scroll-behavior: smooth;
 	scroll-margin: 50%;
 }
