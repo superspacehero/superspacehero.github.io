@@ -6,6 +6,7 @@ html {
     scroll-snap-type: y mandatory;
 	scroll-snap-stop: normal;
 	scroll-behavior: smooth;
+	scroll-margin: 50%;
 }
 
 body {
@@ -82,7 +83,7 @@ a:active, button:active {
 }
 
 .snap {
-  	scroll-snap-align: start;
+  	scroll-snap-align: start end;
 }
 
 .half {
@@ -241,7 +242,6 @@ video.fillrect {
 
 footer{
   	scroll-snap-align: start;
-	transform: translateY(2em);
 }
 
 .footer-copyright {
