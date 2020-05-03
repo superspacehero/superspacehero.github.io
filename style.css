@@ -3,10 +3,10 @@
 }
 
 html {
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
   	/* scroll-snap-stop: always; */
+	/* scroll-margin: 1%; */
 	scroll-behavior: smooth;
-	scroll-margin: 50%;
 }
 
 body {
