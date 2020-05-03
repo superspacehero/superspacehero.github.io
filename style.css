@@ -78,8 +78,15 @@ a:active, button:active {
 .flex-sect {
 	height: 100vh;
 	position: relative;
-  	scroll-snap-align: start;
     overflow: hidden;
+}
+
+.snap {
+  	scroll-snap-align: start;
+}
+
+.half {
+	height: 50vh;
 }
 
 .flex-title {
