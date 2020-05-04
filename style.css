@@ -504,8 +504,9 @@ footer{
 .accordion .content {
 	overflow: visible;
 	height: 50vh;
+	
+	padding: 1em;
 
-	padding: 15px;
 	font-family: Arial;
 	background-color: #0004;
 
@@ -513,20 +514,12 @@ footer{
 }
 
 .accordion > input[type="checkbox"]:checked ~ .content {
-	color: inherit;
+	padding-top: 0;
+	padding-bottom: 0;
 	height: 0;
-	color: #9990;
 	vertical-align: middle;
-	padding: 0;
 	overflow-y: hidden;
 }
-
-.accordion label {
-  display: block;
-}
-
-
-
 
 .accordion {
   margin-bottom: 1em;
@@ -539,39 +532,40 @@ footer{
 /* } */
 
 .accordion .handle {
-  margin: 0;
-  font-size: 1.125em;
-  line-height: 1.2em;
+	margin: 0;
+	font-size: 1.125em;
+	line-height: 1.2em;
 }
 
 .accordion label {
-  cursor: pointer;
-  font-weight: normal;
-  padding: 15px;
-  background: #0009;
+	cursor: pointer;
+	font-weight: normal;
+	padding: 1em;
+	background: #0009;
+	display: block;
 }
 
 .accordion label:hover,
 .accordion label:focus {
-  background: #0006;
+	background: #0006;
 }
 
 .accordion .handle label:before {
-  font-family: 'fontawesome';
-  content: "\f078";
-  display: inline-block;
-  margin-right: 10px;
-  font-size: .58em;
-  line-height: 1.556em;
-  vertical-align: middle;
+	font-family: 'fontawesome';
+	content: "\f078";
+	display: inline-block;
+	margin-right: 1em;
+	font-size: 0.58em;
+	line-height: 1.556em;
+	vertical-align: middle;
 }
 
 .accordion > input[type="checkbox"]:checked ~ .handle label:before {
-  content: "\f054";
+	content: "\f054";
 }
 
 .accordion {
-  max-width: 65em;
+  /* max-width: 65em; */
 }
 
 .accordion p:last-child {
