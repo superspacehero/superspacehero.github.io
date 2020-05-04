@@ -182,39 +182,8 @@
 			</div>
 		</section>
 		
-		<iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+		<iframe src="../footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 		
-		<iframe src="/navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove();"></iframe>
-		
-
-		<script>
-			var slideClass = "burgers";
-			var slideIndex = 1;
-			showSlides(slideClass, slideIndex);
-
-			function currentSlide(s, n) {
-				showSlides(slideString = s, slideIndex = n);
-			}
-
-			function showSlides(s, n) {
-				var i;
-				var slides = document.getElementsByClassName(slideString);
-				var dots = document.getElementsByClassName("demo");
-				var captionText = document.getElementById("caption");
-				
-				if (n > slides.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = slides.length}
-				
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";
-				dots[slideIndex-1].className += " active";
-				captionText.innerHTML = dots[slideIndex-1].alt;
-			}
-		</script>
+		<iframe src="../navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove();"></iframe>
 	</body>
 </html>
