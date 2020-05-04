@@ -11,6 +11,7 @@ html {
 
 body {
 	font-family: Arial Black;
+	font-size: 1.5em;
 	user-select: none;
 	margin: 0;
 	color: #ffd777;
@@ -483,10 +484,10 @@ footer{
 		float: left;
 	}
 
-	.row {
-		align-items: flex-start;
-		flex-wrap: wrap;
-	}
+	/* .row { */
+		/* align-items: flex-start; */
+		/* flex-wrap: wrap; */
+	/* } */
 
 	.gradient {
 		background: linear-gradient(to top, #000b 0%, #0000 50%);
@@ -527,7 +528,8 @@ footer{
 }
 
 .accordion {
-  margin-bottom: 1em;
+	margin-bottom: 1em;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* .accordion > input[type="checkbox"]:checked ~ .content { */
@@ -538,13 +540,12 @@ footer{
 
 .accordion .handle {
 	margin: 0;
-	font-size: 1.125em;
 	line-height: 1.2em;
 }
 
 .accordion label {
 	cursor: pointer;
-	font-weight: normal;
+	/* font-weight: normal; */
 	padding: 1em;
 	background: #0009;
 	
@@ -563,8 +564,6 @@ footer{
 	content: "\f078";
 	display: inline-block;
 	margin-right: 1em;
-	font-size: 0.58em;
-	line-height: 1.556em;
 	vertical-align: middle;
 }
 
