@@ -283,7 +283,7 @@ footer{
 
 .footer-text.copyright {
 	padding-left: 5%;
-	font-size: calc(0.5vmin + 0.5vmax);
+	font-size: calc(0.7vmin + 0.7vmax);
 }
 
 .footer-container {
