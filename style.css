@@ -493,6 +493,11 @@ footer{
 	}
 }
 
+
+
+
+
+
 /*
  CSS for the main interaction
 */
@@ -503,7 +508,7 @@ footer{
 
 .accordion .content {
 	overflow: visible;
-	height: 50vh;
+	height: auto;
 	
 	padding: 1em;
 
@@ -572,5 +577,5 @@ footer{
 }
 
 .accordion p:last-child {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
