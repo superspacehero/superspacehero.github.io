@@ -572,10 +572,10 @@ footer{
 	content: "\f054";
 }
 
-.accordion {
+/* .accordion { */
   /* max-width: 65em; */
-}
+/* } */
 
-.accordion p:last-child {
+/* .accordion p:last-child { */
   /* margin-bottom: 0; */
-}
+/* } */
