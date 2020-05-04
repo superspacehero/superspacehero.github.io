@@ -57,6 +57,13 @@ a:active, button:active {
 	transform: scale(0.93);
 }
 
+a.anchor
+{
+    display: block;
+    position: relative;
+    top: -20vh;
+}
+
 .hero-title
 {
 	font-size: calc(4vmin + 4vmax);
@@ -211,18 +218,6 @@ video.fillrect {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-}
-
-.secondary-buttons.story {
-	background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/story.jpg);
-}
-
-.secondary-buttons.careers {
-	background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/careers.jpg);
-}
-
-.secondary-buttons.nutrition {
-	background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger2.jpg);
 }
 
 .secondary-video {
@@ -432,28 +427,6 @@ footer{
 	height: 100%;
 }
 
-
-
-#burgers {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/hamburger.jpg);
-}
-
-#dogs {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/hotdog.jpg);
-}
-
-#sandwiches {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/grilledcheese.jpg);
-}
-
-#fries {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/sweetpotatofries.jpg);
-}
-
-#toppings {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/toppings.jpg);
-}
-
 /* @media (orientation: portrait) { */
 	/* .fillrect { */
 		/* height: 100vw; */
@@ -518,4 +491,89 @@ footer{
 	.gradient {
 		background: linear-gradient(to top, #000b 0%, #0000 50%);
 	}
+}
+
+/*
+ CSS for the main interaction
+*/
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+	overflow: visible;
+	height: 50vh;
+
+	padding: 15px;
+	font-family: Arial;
+	background-color: #0004;
+
+	transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+	color: inherit;
+	height: 0;
+	color: #9990;
+	vertical-align: middle;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+.accordion label {
+  display: block;
+}
+
+
+
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+/* .accordion > input[type="checkbox"]:checked ~ .content { */
+	/* padding: 15px; */
+	/* font-family: Arial; */
+	/* background-color: #0004; */
+/* } */
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion label {
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #0009;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #0006;
+}
+
+.accordion .handle label:before {
+  font-family: 'fontawesome';
+  content: "\f078";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f054";
+}
+
+.accordion {
+  max-width: 65em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
 }
