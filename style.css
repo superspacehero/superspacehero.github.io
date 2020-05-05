@@ -255,9 +255,9 @@ footer{
 	align-items: center;
 }
 
-.footer-text {
-	color: #ffd777;
-}
+/* .footer-text { */
+	/* color: #ffd777; */
+/* } */
 
 .footer-links {
 	flex-basis:70%;
