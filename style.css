@@ -79,7 +79,7 @@ a.anchor
 	position: relative;
 	/* top: 20vh; */
 	text-align: left;
-	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 5px 5px 10px #000e;
 }
 
 .home
