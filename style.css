@@ -42,7 +42,7 @@ body::-webkit-scrollbar
 	bottom: 0;
 	height: 15%;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
-	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.55);
+	text-shadow: 5px 5px 10px #000e;
 	vertical-align: middle;
 }
 
