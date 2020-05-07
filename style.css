@@ -497,6 +497,8 @@ footer{
 .accordion {
 	margin: 2.5em 6em 2.5em 6em;
 	
+	background-color: #0009;
+	
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -512,7 +514,6 @@ footer{
 	padding: 1em;
 
 	font-family: Arial;
-	/* background-color: #0004; */
 
 	transition: height 0.3s ease;
 }
