@@ -95,6 +95,7 @@ a.anchor
 .hero-title.description
 {
 	font-size: calc(1vmin + 1vmax);
+	margin-top: 1vmin;
 }
 
 .flex-sect {
