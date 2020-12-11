@@ -398,7 +398,7 @@ footer{
 }
 
 .flex-menu-title {
-	font-size: calc(2.5vmin + 1.5vmax);
+	font-size: calc(2.15vmin + 1.15vmax);
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
