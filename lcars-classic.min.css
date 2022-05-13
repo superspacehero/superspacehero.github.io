@@ -549,22 +549,26 @@ a
 
 @media only screen and (max-width: 500px)
 {
-	.button a
+	.button
 	{
+		width: 190px;
+		/* display: inline-block; */
 		height: 44px;
 		padding-top: 10px;
+		/* padding: 0 0 0 0; */
 		width: 142px;
 		border-radius: 20px;
+		text-align: center;
 		font-size: 1rem;
 	}
 }
 
 @media only screen and (max-width: 388px)
 {
-	.button a
+	.button
 	{
 		width: 134px;
-		font-size: .85rem;
+		font-size: 0.85rem;
 	}
 }
 
@@ -800,7 +804,7 @@ h3
 p.caption
 {
 	margin-top: 10px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	text-align: center;
 	font-size: .88rem;
 }
@@ -2190,6 +2194,11 @@ footer::after
 
 	.left-frame
 	{
+		border-radius: 60px 0 0 60px;
+	}
+
+	.bottom
+	{
 		border-radius: 60px 0 0 0;
 	}
 
@@ -2251,8 +2260,13 @@ footer::after
 
 	.left-frame
 	{
-		border-radius: 26px 0 0 0;
+		border-radius: 26px 0 0 26px;
 		padding-top: 50px;
+	}
+
+	.bottom
+	{
+		border-radius: 26px 0 0 0;
 	}
 
 	.scroll-top a
