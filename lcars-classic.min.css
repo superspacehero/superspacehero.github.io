@@ -110,7 +110,7 @@ a {
     display: flex;
     margin: 0 auto;
     padding: 0 5px 0 5px;
-    /* overflow: hidden; */
+    overflow: hidden;
     max-width: 1340px;
 }
 
