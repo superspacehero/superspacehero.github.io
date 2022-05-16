@@ -243,7 +243,6 @@ video.fillrect {
     height: 100%;
     object-fit: cover;
 	z-index: -20;
-	image
 }
 
 .secondary-fade {
