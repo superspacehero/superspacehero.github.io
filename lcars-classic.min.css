@@ -442,7 +442,7 @@ a {
     .button-col,
     .button-col-1,
     .button-col-2 {
-        width: auto;
+        width: 50%;
         border-left: 15px solid #000;
     }
 }
