@@ -110,7 +110,7 @@ a {
     display: flex;
     margin: 0 auto;
     padding: 0 5px 0 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: 1340px;
 }
 
@@ -143,8 +143,6 @@ a {
 
 .left-frame,
 .left-frame-top {
-    width: 190px;
-    min-width: 190px;
     text-align: right;
     font-size: 0.88rem;
     font-weight: 700;
@@ -426,34 +424,37 @@ a {
     white-space: nowrap;
 }
 
-.button-col,
+.button-group,
 .button-col-1,
 .button-col-2 {
-    width: 190px;
-}
+    width: 380px;
+    height: 100%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
 
-.button-col div:last-of-type,
-.button-col-1 div:last-of-type,
-.button-col-2 div:last-of-type {
+    justify-content: space-between;
     margin-bottom: -15px;
 }
 
 @media only screen and (max-width: 610px) {
-    .button-col,
+    .button-group,
     .button-col-1,
     .button-col-2 {
-        width: 50%;
-        border-left: 15px solid #000;
+        width: 100%;
     }
 }
 
 .button {
-    display: block;
-    width: 190px;
+    width: 50%;
+    margin-right: -5px;
 
     height: 58px;
     line-height: 58px !important;
-
+    
+    /* Put a gap between button columns */
+    
     margin-bottom: 15px;
     /* padding: 22px 0; */
     border-radius: 26px;
@@ -498,12 +499,12 @@ a {
 @media only screen and (max-width: 500px) {
     .button {
         width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
 
         height: 44px;
         line-height: 44px !important;
 
-        /* padding-top: 10px; */
-        width: 142px;
         border-radius: 20px;
         text-align: center;
         font-size: 0.85rem;
