@@ -46,7 +46,7 @@ html {
 
 body {
     margin: 0;
-    padding: 5px 0;
+    padding: 5px 5px 0 0;
     background-color: #000;
     font-family: Antonio, "Arial Narrow", "Avenir Next Condensed", sans-serif;
     line-height: 1.5;
@@ -62,12 +62,24 @@ a {
     text-decoration: none;
 }
 
-.video-background {
-    padding-left: 5px;
+.video-background-container {
+    position: relative;
     width: 100%;
     height: 50vh;
+    max-height: 15em;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    /* padding-left: 5px; */
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     opacity: 0.5;
+    z-index: -1;
 }
 
 @keyframes blink {
@@ -143,12 +155,14 @@ a {
 
 .left-frame,
 .left-frame-top {
+    width: 190px;
+    min-width: 190px;
     text-align: right;
     font-size: 0.88rem;
     font-weight: 700;
     color: #000;
-    background-color: #78f;
     /* border-right: 5px solid #000; */
+    background-color: #78f;
 }
 
 .left-frame-top {
@@ -167,6 +181,7 @@ a {
     justify-content: space-between;
     padding-top: 90px;
     border-radius: 100px 0 0 100px;
+    /* background-color: #d44; */
 }
 
 .bottom {
@@ -208,9 +223,6 @@ a {
 }
 
 .banner {
-    top: 0;
-    right: 5px;
-    position: absolute;
     padding: 0 0 15px 5px;
     text-align: right;
     text-transform: uppercase;
@@ -1982,12 +1994,6 @@ footer::after {
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-        padding: 0;
-    }
-    .wrap {
-        padding-left: 0;
-    }
     .left-frame,
     .left-frame-top {
         width: 60px;
