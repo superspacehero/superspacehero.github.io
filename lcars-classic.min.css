@@ -3,7 +3,7 @@
     font-size: 1.35rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     :root {
         font-size: 1.2rem;
     }
@@ -436,17 +436,21 @@ a {
     white-space: nowrap;
 }
 
-.button-group,
-.button-col-1,
-.button-col-2 {
-    width: 380px;
-    height: 100%;
+.grid {
     display: flex;
     
     flex-wrap: wrap;
     flex-direction: row;
 
     justify-content: space-between;
+}
+
+.button-group,
+.button-col-1,
+.button-col-2 {
+    width: 380px;
+    height: 100%;
+    padding-right: 5px;
     margin-bottom: -15px;
 }
 
@@ -455,6 +459,7 @@ a {
     .button-col-1,
     .button-col-2 {
         width: 100%;
+        padding-right: 0;
     }
 }
 
@@ -464,8 +469,6 @@ a {
 
     height: 58px;
     line-height: 58px !important;
-    
-    /* Put a gap between button columns */
     
     margin-bottom: 15px;
     /* padding: 22px 0; */
@@ -511,7 +514,7 @@ a {
 @media only screen and (max-width: 500px) {
     .button {
         width: 100%;
-        padding-right: 0;
+        margin-right: 0;
         margin-bottom: 10px;
 
         height: 44px;
@@ -520,6 +523,10 @@ a {
         border-radius: 20px;
         text-align: center;
         font-size: 0.85rem;
+    }
+
+    .grid {
+        flex-direction: column;
     }
 }
 
@@ -709,11 +716,12 @@ a {
 .flexbox {
     display: flex;
     column-gap: 2vw;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 .col {
-    flex: 1 1 300px;
+    flex: 1 0 50%;
+    padding: 0 1vw;
 }
 
 h1,
