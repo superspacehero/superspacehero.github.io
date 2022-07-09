@@ -508,6 +508,36 @@ a {
     animation: none;
 }
 
+@media only screen and (max-width: 1280px) {
+    .button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .button {
+        font-size: 0.875rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .button {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .button {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .button {
+        font-size: 0.85rem;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .button {
         width: 100%;
