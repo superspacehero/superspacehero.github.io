@@ -173,7 +173,6 @@ a {
 .left-frame a,
 .left-frame-top a {
     text-decoration: none;
-    color: #000;
 }
 
 .left-frame {
@@ -192,9 +191,12 @@ a {
 .panel-1 {
     display: block;
     background-color: #c8f;
+    background-image: url("icon.gif");
+    background-size: cover;
+    background-position: 50% 0;
     padding: 82px 10px 15px 0;
     text-decoration: none;
-    color: #000;
+    color: violet;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -ms-user-select: none;
