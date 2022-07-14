@@ -18,8 +18,30 @@
 
 // });
 
+var audios = [
+    'media/sounds/SelectionSound.ogg',
+    'media/sounds/Eating.ogg'
+];
+
+var lastSoundPlayed = 0;
+
 function playsound() {
-    var mysound = document.getElementById("mysound");
+
+    // Get a random sound from the array
+    var audio = lastSoundPlayed;
+
+    if (audios.length > 1) {
+        while (audio == lastSoundPlayed)
+        {
+            audio = Math.floor(Math.random() * (audios.length));
+        }
+        lastSoundPlayed = audio;
+    }
+
+    audio = audios[audio];
+
+    // Change mysound.src to the path of the sound file you want to play
+    mysound.src = audio;
     mysound.autoplay = 'true';
     mysound.load();
 }
