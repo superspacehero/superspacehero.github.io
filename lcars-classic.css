@@ -468,10 +468,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #f5f6fa;
-}
-
 .button {
     width: 50%;
     margin-right: -5px;
@@ -514,10 +510,12 @@ button:hover {
     background-color: #d44;
 }
 
-.button a:active,
-.button a:focus {
-    filter: brightness(120%);
-    animation:cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.button:hover {
+    filter: brightness(130%);
+}
+
+.button:active {
+    filter: brightness(70%);
 }
 
 @media only screen and (max-width: 1280px) {
