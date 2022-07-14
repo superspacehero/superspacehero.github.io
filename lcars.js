@@ -18,36 +18,21 @@
 
 // });
 
-var audios = [
-    'media/sounds/Alarm.ogg',
-    'media/sounds/Alarm2.ogg',
-    'media/sounds/BuzzWarmUp.ogg',
-    'media/sounds/DigitalSeal.ogg',
-    'media/sounds/GroanDown.ogg',
-    'media/sounds/GroanUp.ogg',
-    'media/sounds/SelectionSound.ogg',
-    'media/sounds/ZapDown.ogg'
-];
-
 var lastSoundPlayed = 0;
+var sounds = document.getElementsByTagName('audio');
 
 function playsound() {
-
     // Get a random sound from the array
-    var audio = lastSoundPlayed;
-
-    if (audios.length > 1) {
-        while (audio == lastSoundPlayed)
+    var sound = lastSoundPlayed;
+    if (sounds.length > 1) {
+        while (sound == lastSoundPlayed)
         {
-            audio = Math.floor(Math.random() * (audios.length));
+            sound = Math.floor(Math.random() * (sounds.length));
         }
-        lastSoundPlayed = audio;
+        lastSoundPlayed = sound;
     }
+    sound = sounds[sound];
 
-    audio = audios[audio];
-
-    // Change mysound.src to the path of the sound file you want to play
-    mysound.src = audio;
-    mysound.autoplay = 'true';
-    mysound.load();
+    sound.autoplay = 'true';
+    sound.load();
 }
