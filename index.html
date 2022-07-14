@@ -33,7 +33,7 @@
             
             <div class="right-frame-top">
                 <div class="video-background-container">
-                        <video class="video-background" id="videos" loop muted autoplay poster="img/Hero.png"><source src="img/Hero.mp4" type="video/mp4"></video>
+                        <video class="video-background" id="videos" loop muted autoplay poster="media/videos/Hero.png"><source src="media/videos/Hero.mp4" type="video/mp4"></video>
                         <h1 class="banner">Asher Pinson</h1>
                     </div>
                     <div class="data-cascade-button-group">
@@ -46,7 +46,10 @@
                         <div class="button" id="top-left">Game Programmer</div>
                         <div class="button" id="top-right">Game Animator</div>
                         <div class="button" id="bottom-left">UI Programmer</div>
-                        <div class="button" id="bottom-right">Audio Designer</div>
+                        <button class="button" id="bottom-right" onclick="playsound()">Audio Designer</button>
+                            <audio id="mysound">
+                                <source src="media/sounds/SelectionSound.wav">
+                            </audio>
                     </div>
                 </div>
                 
@@ -197,13 +200,13 @@
                         <span>Go-to software</span>
                     </div>
                     
-                    <img src="img/icons/unity.png" alt="Unity" title="Unity">
-                    <img src="img/icons/c-sharp.png" alt="C#" title="C#">
-                    <img src="img/icons/visual-studio-code.png" alt="Visual Studio Code" title="Visual Studio Code">
-                    <img src="img/icons/github.png" alt="Github" title="Github">
-                    <img src="img/icons/blender.png" alt="Blender" title="Blender">
-                    <img src="img/icons/inkscape.png" alt="Inkscape" title="Inkscape">
-                    <img src="img/icons/audacity.png" alt="Audacity" title="Audacity">
+                    <img src="media/icons/unity.png" alt="Unity" title="Unity">
+                    <img src="media/icons/c-sharp.png" alt="C#" title="C#">
+                    <img src="media/icons/visual-studio-code.png" alt="Visual Studio Code" title="Visual Studio Code">
+                    <img src="media/icons/github.png" alt="Github" title="Github">
+                    <img src="media/icons/blender.png" alt="Blender" title="Blender">
+                    <img src="media/icons/inkscape.png" alt="Inkscape" title="Inkscape">
+                    <img src="media/icons/audacity.png" alt="Audacity" title="Audacity">
                     
                     <!-- <div class="lcars-text-bar">
                         <span>Games I Like</span>
