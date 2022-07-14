@@ -463,11 +463,6 @@ a {
     }
 }
 
-button {
-    font: inherit;
-    cursor: pointer;
-}
-
 .button {
     width: 50%;
     margin-right: -5px;
@@ -510,11 +505,16 @@ button {
     background-color: #d44;
 }
 
-.button:hover {
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
     filter: brightness(130%);
 }
 
-.button:active {
+button:active {
     filter: brightness(70%);
 }
 
