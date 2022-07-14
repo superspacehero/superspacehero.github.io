@@ -19,8 +19,14 @@
 // });
 
 var audios = [
+    'media/sounds/Alarm.ogg',
+    'media/sounds/Alarm2.ogg',
+    'media/sounds/BuzzWarmUp.ogg',
+    'media/sounds/DigitalSeal.ogg',
+    'media/sounds/GroanDown.ogg',
+    'media/sounds/GroanUp.ogg',
     'media/sounds/SelectionSound.ogg',
-    'media/sounds/Eating.ogg'
+    'media/sounds/ZapDown.ogg'
 ];
 
 var lastSoundPlayed = 0;
