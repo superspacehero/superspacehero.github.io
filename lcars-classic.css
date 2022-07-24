@@ -1,7 +1,6 @@
 @charset "utf-8";
 :root {
     font-size: 1.35rem;
-    background-color: #000;
 }
 
 @media only screen and (max-width: 800px) {
@@ -18,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #000;
 }
 
 ::-webkit-scrollbar {
