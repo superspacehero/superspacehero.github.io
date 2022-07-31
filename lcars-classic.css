@@ -196,6 +196,7 @@ a {
     background-position: 50% 0;
     padding: 82px 10px 15px 0;
     text-decoration: none;
+    text-shadow: 0px 0px 10px black;
     color: azure;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
