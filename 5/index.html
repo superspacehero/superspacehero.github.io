@@ -1,75 +1,223 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-	<head> 
-		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-		<title>Asher Pinson - Slime</title>
-		<link rel="stylesheet" href="../style.css" type="text/css">
-		<script src="https://kit.fontawesome.com/da13be3499.js" crossorigin="anonymous"></script>
-		
-		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-		<link rel="manifest" href="../site.webmanifest">
-	</head> 
+    <head>
+        <title>Asher Pinson - Slime</title>
 
-	<body>
-		<section class="flex-sect">
-			
-			<video class="fillrect" loop="1" autoplay="1" muted="1"><source src="https://giant.gfycat.com/PlushBlindHuia.webm" type="video/webm" alt="Attacks"></source></video>
-			
-			<div class="fillrect gradient left"></div>
-				
-			<div class="flex-title left">
-				<div class="vertical-center">
-					<h1 id="HeroTitle" class="hero-title">Slime</h1>
-					<h2 id="HeroSubtitle" class="hero-title subtitle">Lead programmer, animator, sound designer</h2>
-					<h2 id="HeroDescription" class="hero-title description">A touch-based platformer made for a 48-hour game jam</h2>
-				</div>
-			</div>
-		</section>
-		
-		<section class="flex-sect menu twothirds">
-			<video class="menu-background right" loop="1" autoplay="1" muted="1"><source src="https://thumbs.gfycat.com/CalmMetallicCoypu-mobile.mp4" type="video/mp4" alt="Attacks"></source></video>
-			
-			<div class="flex-menu left">
-				<div class="menu-panel">
-					<div class="flex-menu-title">Automatic Movement</div>
-						<p class="menu-note">The player automatically moves forwards. If they bump into an object, they turn around and go the opposite direction.</p>
-				</div>
-			</div>
-		</section>
-		
-		<section class="flex-sect menu twothirds">
-			<video class="menu-background right" loop="1" autoplay="1" muted="1" poster="img/Hero.png"><source src="https://thumbs.gfycat.com/VastOddballBluetonguelizard-mobile.mp4" type="video/mp4" alt="Strong"></source></video>
-			
-			<div class="flex-menu left">
-				<div class="menu-panel">
-					<div class="flex-menu-title">Touch Turning</div>
-						<p class="menu-note">Touching the screen also turns the player around.</p>
-				</div>
-			</div>
-		</section>
-		
-		<section class="flex-sect menu twothirds">
-			<video class="menu-background right" loop="1" autoplay="1" muted="1"><source src="https://thumbs.gfycat.com/CarefulLoneBluewhale-mobile.mp4" type="video/mp4" alt="Avoiding"></source></video>
-			
-			<div class="flex-menu left">
-				<div class="menu-panel">
-					<div class="flex-menu-title">Touch Climbing</div>
-						<p class="menu-note">Touch objects to climb them, then touch to the left or right of the player to jump in that direction.</p>
-				</div>
-			</div>
-		</section>
-		
-		<section class="accordion">
-			<input type="checkbox" name="collapse" id="aboutBox">
-			<h1 class="handle">
-				<label for="aboutBox"><a href="https://superspacehero.itch.io/slime">Click here to download Slime</a></label>
-			</h1>
-		</section>
-		
-		<iframe src="../footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-		
-		<iframe src="../navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove();"></iframe>
-	</body>
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Asher Pinson - Slime">
+        <meta name="twitter:description" content="Battle the manifestations of dirt and muck that reside in the halls you've been assigned to clean.">
+        <meta name="twitter:image" content="./thumb.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="date=no">
+        <link rel="stylesheet" type="text/css" href="../lcars-classic.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/da13be3499.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <div class="wrap">
+            <!-- <div class="scroll-top">
+                <a id="scroll-top" href=""><span class="hop">screen</span> top</a>
+            </div> -->
+            <div class="left-frame-top">
+                <a class="panel-1" href="../index.html">Asher<span class="hop"> Pinson</span></a>
+                <div class="panel-4"></div>
+                <div class="panel-2"></div>
+            </div>
+            
+            <div class="right-frame-top">
+                <div class="video-background-container">
+                    <video class="video-background" loop muted autoplay poster="./thumb.png"><source src="https://giant.gfycat.com/PlushBlindHuia.webm" type="video/mp4"></video>
+                    <h1 class="banner">Slime</h1>
+                    <h3 class="banner">GM48 project, 2017</h3>
+                </div>
+                <div class="data-cascade-button-group">
+                    <div class="cascade-wrapper">
+                        <div class="data-cascade" id="default">
+                            <div class="row-1"><div class="dc1">101</div><div class="dc2">7109</div><div class="dc3">1966</div><div class="dc4">1222</div><div class="dc5">2020</div><div class="dc6">1444</div><div class="dc7">102</div><div class="dc8">1103</div><div class="dc9">1935</div><div class="dc10">1940</div><div class="dc11">708</div><div class="dc12">M113</div><div class="dc13">1956</div><div class="dc14">1209</div></div><div class="row-2"><div class="dc1">102</div><div class="dc2">8102</div><div class="dc3">1987</div><div class="dc4">044</div><div class="dc5">0051</div><div class="dc6">607</div><div class="dc7">1976</div><div class="dc8">1031</div><div class="dc9">1984</div><div class="dc10">1954</div><div class="dc11">1103</div><div class="dc12">415</div><div class="dc13">1045</div><div class="dc14">1864</div></div><div class="row-3"><div class="dc1">103</div><div class="dc2">714</div><div class="dc3">1993</div><div class="dc4">0222</div><div class="dc5">052</div><div class="dc6">1968</div><div class="dc7">2450</div><div class="dc8">746</div><div class="dc9">56</div><div class="dc10">47</div><div class="dc11">716</div><div class="dc12">8719</div><div class="dc13">417</div><div class="dc14">602</div></div><div class="row-4"><div class="dc1">104</div><div class="dc2">6104</div><div class="dc3">1995</div><div class="dc4">322</div><div class="dc5">90</div><div class="dc6">1931</div><div class="dc7">1701</div><div class="dc8">51</div><div class="dc9">29</div><div class="dc10">218</div><div class="dc11">908</div><div class="dc12">2114</div><div class="dc13">85</div><div class="dc14">3504</div></div><div class="row-5"><div class="dc1">105</div><div class="dc2">08</div><div class="dc3">2001</div><div class="dc4">713</div><div class="dc5">079</div><div class="dc6">1940</div><div class="dc7">LV</div><div class="dc8">426</div><div class="dc9">105</div><div class="dc10">10</div><div class="dc11">1206</div><div class="dc12">1979</div><div class="dc13">402</div><div class="dc14">795</div></div><div class="row-6"><div class="dc1">106</div><div class="dc2">31</div><div class="dc3">2017</div><div class="dc4">429</div><div class="dc5">65</div><div class="dc6">871</div><div class="dc7">1031</div><div class="dc8">541</div><div class="dc9">656</div><div class="dc10">764</div><div class="dc11">88</div><div class="dc12">001</div><div class="dc13">27</div><div class="dc14">05</div></div>
+                        </div> 
+                    </div> 
+                    <div class="button-group grid">
+                        <div class="button" id="top-left">Gameplay Programmer</div>
+                        <div class="button" id="top-right">Enemy Designer</div>
+                        <div class="button" id="bottom-left">Sound Designer</div>
+                        <div class="button" id="bottom-right">Animator</div>
+                    </div>
+                </div>
+                
+                <div class="runner">
+                    <div class="top-corner-bg">
+                        <div class="top-corner"></div>
+                    </div>
+                    <div class="block-2"></div>
+                    <div class="block-4">
+                        <div class="block-4-floatbar-top"></div>
+                    </div>
+                </div>
+
+                <div class="bar-panel">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                    <div class="bar-4"><div class="bar-4-inside"></div></div>
+                    <div class="bar-5"></div>		
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="wrap" id="gap">
+            <div class="left-frame" id="short">
+                <div>
+                    <div class="panel-3"></div>
+                    <div class="panel-8"></div>
+                    <div class="panel-4"></div>
+                    <div class="panel-2"></div>
+                </div>
+            </div>
+            <div class="right-frame">
+                <div class="bar-panel">
+                    <div class="bar-6"></div>
+                    <div class="bar-7"></div>
+                    <div class="bar-8"></div>
+                    <div class="bar-9"><div class="bar-9-inside"></div></div>
+                    <div class="bar-10"></div>
+                </div>
+                <div class="runner">
+                    <div class="corner-bg">
+                        <div class="corner"></div>
+                    </div>
+                    <div class="block-2"></div>
+                    <div class="block-4b">
+                        <div class="block-4-floatbar-bottom"></div>
+                        <div class="block-4-thinbar"></div>
+                    </div>
+                </div>
+                <div class="content">
+
+                    <!-- Start your content here. -->
+
+                    <h1>Info</h1>
+
+                    <a href="https://superspacehero.itch.io/slime">
+                        <h2>itch.io - free download</h2>
+                    </a>
+                    
+                    <div class="lcars-text-bar">
+                        <span>About Slime</span>
+                    </div>
+                        <p>Take the role of a hungry snail and each all the vegetables you can find in the garden before the day ends. Climb up flowers and signposts, jump to avoid hungry frogs, and beware the mysterious Squirlid...</p>
+                        <p>Slime was made by a team of 2 in 48 hours for the GM48 game jam in the Spring of 2017.</p>
+
+                        <hr>
+                    
+                        <div class="lcars-text-bar">
+                            <span>Automatic Movement</span>
+                        </div>
+                            <p>Your snail automatically moves forwards. If you bump into an object, you'll turn around and move in the opposite direction.</p>
+                            <video loop muted autoplay class="pics" alt="Automatic Movement">
+                                <source src="https://giant.gfycat.com/CalmMetallicCoypu.mp4" type="video/mp4">
+                            </video>
+                    
+                        <div class="lcars-text-bar">
+                            <span>Touch Turning</span>
+                        </div>
+                            <p>Touching the screen also turns your snail around.</p>
+                            <video loop muted autoplay class="pics" alt="Touch Turning">
+                                <source src="https://giant.gfycat.com/VastOddballBluetonguelizard.mp4" type="video/mp4">
+                            </video>
+                    
+                        <div class="lcars-text-bar">
+                            <span>Touch Climbing</span>
+                        </div>
+                            <p>Touch flowers and signposts to climb them, then touch to the left or right of your snail to jump in that direction.</p>
+                            <video loop muted autoplay class="pics" alt="Touch Climbing">
+                                <source src="https://giant.gfycat.com/CarefulLoneBluewhale.mp4" type="video/mp4">
+                            </video>
+                    
+                    <!-- End content area. -->
+                </div>
+                
+                <div class="runner">
+                    <div class="top-corner-bg">
+                        <div class="top-corner"></div>
+                    </div>
+                    <div class="block-2"></div>
+                    <div class="block-4">
+                        <div class="block-4-floatbar-top"></div>
+                    </div>
+                </div>
+
+                <div class="bar-panel">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                    <div class="bar-4"><div class="bar-4-inside"></div></div>
+                    <div class="bar-5"></div>		
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="wrap" id="gap">
+            <div class="left-frame bottom" id="short">
+                <div>
+                    <div class="panel-3"></div>
+                    <div class="panel-4"></div>
+                    <div class="panel-5"></div>
+                </div>
+            </div>
+
+            <div class="right-frame">
+                <div class="bar-panel">
+                    <div class="bar-6"></div>
+                    <div class="bar-7"></div>
+                    <div class="bar-8"></div>
+                    <div class="bar-9"><div class="bar-9-inside"></div></div>
+                    <div class="bar-10"></div>
+                </div>
+                <div class="runner">
+                    <div class="corner-bg">
+                        <div class="corner"></div>
+                    </div>
+                    <div class="block-2"></div>
+                    <div class="block-4b">
+                        <div class="block-4-floatbar-bottom"></div>
+                        <div class="block-4-thinbar"></div>
+                    </div>
+                </div>
+
+                <div class="content">
+
+                    <!-- Start your content here. -->
+
+                    <footer id="gap">
+                        <div class="footer-inside">
+                            <div class="footer-text">
+                                <!-- Your copyright information is only a suggestion. You can also choose to delete this paragraph. But please keep my information as required by the EULA. -->
+                                <p>© <script>document.write(new Date().getFullYear());</script> Asher Pinson.</p>
+                                <p>LCARS Inspired Website Template by <a href="https://www.thelcars.com">www.TheLCARS.com</a> and modified by Asher Pinson.</p>
+                            </div>
+                        </div>
+                        <div class="footer-panel"></div>
+                    </footer>
+                    
+                    <!-- End content area. -->
+                </div>
+            </div>
+        </div>
+        
+        <script src="../lcars.js"></script>
+    </body>
 </html>
