@@ -125,17 +125,18 @@
                         <hr>
                     
                         <div class="lcars-text-bar">
-                            <span>Scalable Explosives</span>
+                            <span>Extensible Explosives</span>
                         </div>
-                            <p>A wide variety of explosive foodstuffs are at players' disposal. To make the creation of such a variety of explosives feasible, I made a base class for bombs that allowed for easy expansion to make them as designers envisioned.</p>
-                            <video loop muted autoplay class="pics" alt="Scalable Explosives">
+                            <p>A wide variety of explosive foodstuffs are at players' disposal. I created an inheritable base class for bombs that contained reusable functionality, enabling developers to easily expand bomb types as designers envisioned them.</p>
+                            <video loop muted autoplay class="pics" alt="Extensible Explosives">
                                 <source src="Bombs.webm" type="video/webm">
                             </video>
                     
                         <div class="lcars-text-bar">
                             <span>Implementing Input</span>
                         </div>
-                            <p>Although still in a pre-release state at the time, Unity's Input System made handling multiplayer input simple, greatly speeding up the process of allowing players to control individual characters and menu elements.</p>
+                            <p>Although it was still in a pre-release state at the time, I quickly learned how to use Unity's more modular Input System, implementing it to simplify the process of handling separate players' inputs down to the usage of a single function for each input.</p>
+                            <p>The pre-release state of the system meant I had to figure out some workarounds to allow for multiple players to share a keyboard, but the simplicity and modularity the system offered allowed me to get a functional prototype of the game built in only a couple days.</p>
                             <video loop muted autoplay class="pics" alt="Implementing Input">
                                 <source src="Input.webm" type="video/webm">
                             </video>
@@ -143,8 +144,9 @@
                         <div class="lcars-text-bar">
                             <span>Frenzy Mode</span>
                         </div>
-                            <p>A relatively late addition to the game, the Frenzy tower-defense mode was created in order to offer a singleplayer mode, but can be played cooperatively with others, as well.</p>
-                            <p>Players must defend the base in the center from enemy starbots with various types of behaviors - some try to bomb the base, some shoot burrito torpedos at players, but all share a base class for their AI.</p>
+                            <p>The Frenzy tower-defense mode offers players a singleplayer mode, but can be played cooperatively with others, as well.</p>
+                            <p>Players must defend the base in the center from enemy starbots with various types of behaviors - some try to bomb the base, some shoot burrito torpedos at players, but all share a base class for their AI that made implementing new enemy behaviors a straightforward process.</p>
+                            <p>Originally, the only singleplayer content available would have been a 15-stage tutorial of the game's bombs and mechanics, but a discussion with the design team on how to reasonably offer more for singleplayer play led to the creation of this mode, which repurposed the tutorial's enemy starbots to offer more fun for those playing alone, without drastically increasing the project's scope.</p>
                             <video loop muted autoplay class="pics" alt="Frenzy Mode">
                                 <source src="Frenzy.webm" type="video/webm">
                             </video>
