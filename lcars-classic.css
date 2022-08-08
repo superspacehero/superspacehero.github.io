@@ -83,6 +83,14 @@ a {
     /* opacity: 0.5; */
 }
 
+.software-icons {
+    /* Make this flex horizontally */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @keyframes blink {
     0% {
         opacity: 0;
