@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Asher Pinson - Slime</title>
+        <title>Asher Pinson - The Cleaner</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
         <link rel="manifest" href="../site.webmanifest">
 
-        <meta property="og:title" content="Asher Pinson - Slime">
-        <meta property="og:site_name" content="Asher Pinson - Slime">
-        <meta property="og:url" content="https://asherpinson.com/5">
-        <meta property="og:description" content="Take the role of a hungry snail and eat all the vegetables you can find in the garden before the day ends.">
+        <meta property="og:title" content="Asher Pinson - The Cleaner">
+        <meta property="og:site_name" content="Asher Pinson - The Cleaner">
+        <meta property="og:url" content="https://asherpinson.com/4">
+        <meta property="og:description" content="Battle the manifestations of dirt and muck that reside in the halls you've been assigned to clean.">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://asherpinson.com/5/thumb.png">
+        <meta property="og:image" content="https://asherpinson.com/4/thumb.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
@@ -40,9 +40,9 @@
             
             <div class="right-frame-top">
                 <div class="video-background-container">
-                    <video class="video-background" loop muted autoplay poster="./thumb.png"><source src="https://giant.gfycat.com/PlushBlindHuia.webm" type="video/mp4"></video>
-                    <h1 class="banner">Slime</h1>
-                    <h3 class="banner">GM48 project, 2017</h3>
+                    <video class="video-background" loop muted autoplay poster="./thumb.png"><source src="StrongAttacks.webm" type="video/webm"></video>
+                    <h1 class="banner">The Cleaner</h1>
+                    <h3 class="banner">Student project, 2019</h3>
                 </div>
                 <div class="data-cascade-button-group">
                     <div class="cascade-wrapper">
@@ -51,10 +51,10 @@
                         </div> 
                     </div> 
                     <div class="button-group grid">
-                        <div class="button" id="top-left">Gameplay Programmer</div>
-                        <div class="button" id="top-right">Enemy Designer</div>
-                        <div class="button" id="bottom-left">Sound Designer</div>
-                        <div class="button" id="bottom-right">Animator</div>
+                        <div class="button" id="top-left">Lead Programmer</div>
+                        <div class="button" id="top-right">Project Lead</div>
+                        <div class="button" id="bottom-left">Mecanim Animator</div>
+                        <div class="button" id="bottom-right">Battle Designer</div>
                     </div>
                 </div>
                 
@@ -112,41 +112,46 @@
 
                     <h1>Info</h1>
 
-                    <a href="https://superspacehero.itch.io/slime">
-                        <h2>itch.io - free download</h2>
+                    <a href="https://superspacehero.itch.io/thecleaner">
+                        <h2>itch.io - play online</h2>
                     </a>
                     
                     <div class="lcars-text-bar">
-                        <span>About Slime</span>
+                        <span>About The Cleaner</span>
                     </div>
-                        <p>Take the role of a hungry snail and eat all the vegetables you can find in the garden before the day ends. Climb up flowers and signposts, jump to avoid hungry frogs, and beware the mysterious Squirlid...</p>
-                        <p>Slime was made by a team of 2 in 48 hours for the GM48 game jam in the Spring of 2017.</p>
+                        <p>Battle the manifestations of dirt and muck that reside in the halls you've been assigned to clean.</p>
+                        <p>The Cleaner was made by a group of three for a fictional, three-button handheld console as a Game Platform Analysis project for George Mason University in the Spring of 2019.</p>
 
                         <hr>
                     
                         <div class="lcars-text-bar">
-                            <span>Automatic Movement</span>
+                            <span>Enemy Attacks</span>
                         </div>
-                            <p>Your snail automatically moves forwards. If you bump into an object, you'll turn around and move in the opposite direction.</p>
-                            <video loop muted autoplay class="pics" alt="Automatic Movement">
-                                <source src="https://giant.gfycat.com/CalmMetallicCoypu.mp4" type="video/mp4">
+                            <p>I made a scalable, animation-based system for attacks that allowed us to implement a variety of different attack types quickly and easily.</p>
+                            <video loop muted autoplay class="pics" alt="Enemy Attacks">
+                                <source src="EnemyAttacks.webm" type="video/webm">
                             </video>
                     
-                        <div class="lcars-text-bar">
-                            <span>Touch Turning</span>
-                        </div>
-                            <p>Touching the screen also turns your snail around.</p>
-                            <video loop muted autoplay class="pics" alt="Touch Turning">
-                                <source src="https://giant.gfycat.com/VastOddballBluetonguelizard.mp4" type="video/mp4">
-                            </video>
+                            <div class="lcars-text-bar">
+                                <span>Defending Yourself</span>
+                            </div>
+                                <p>As we had to work around the constraints of the handheld only having three buttons, I used this as a source of creativity and made each of them provide a different defense:</p>
+                                <ul>
+                                    <li><span class="go-gold">Left:</span> Catch projectiles from above with a bucket over your head</li>
+                                    <li><span class="go-gold">Right:</span> Catch projectiles heading straight towards you in a bucket</li>
+                                    <li><span class="go-gold">Action:</span> Jump to avoid an attack</li>
+                                </ul>
+                                <video loop muted autoplay class="pics" alt="Defending Yourself">
+                                    <source src="Defending.webm" type="video/webm">
+                                </video>
                     
-                        <div class="lcars-text-bar">
-                            <span>Touch Climbing</span>
-                        </div>
-                            <p>Touch flowers and signposts to climb them, then touch to the left or right of your snail to jump in that direction.</p>
-                            <video loop muted autoplay class="pics" alt="Touch Climbing">
-                                <source src="https://giant.gfycat.com/CarefulLoneBluewhale.mp4" type="video/mp4">
-                            </video>
+                                <div class="lcars-text-bar">
+                                    <span>Performing Strong Attacks</span>
+                                </div>
+                                    <p>To reward players for defending against an attack, I made catching enemy particles fill a power meter at the top of the screen. When the meter fills up, the power of their next attack increases.</p>
+                                    <video loop muted autoplay class="pics" alt="Defending Yourself">
+                                        <source src="StrongAttacks.webm" type="video/webm">
+                                    </video>
                     
                     <!-- End content area. -->
                 </div>

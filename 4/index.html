@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Asher Pinson - The Cleaner</title>
+        <title>Asher Pinson - Starbot Showdown</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
         <link rel="manifest" href="../site.webmanifest">
 
-        <meta property="og:title" content="Asher Pinson - The Cleaner">
-        <meta property="og:site_name" content="Asher Pinson - The Cleaner">
-        <meta property="og:url" content="https://asherpinson.com/4">
-        <meta property="og:description" content="Battle the manifestations of dirt and muck that reside in the halls you've been assigned to clean.">
+        <meta property="og:title" content="Asher Pinson - Starbot Showdown">
+        <meta property="og:site_name" content="Asher Pinson - Starbot Showdown">
+        <meta property="og:url" content="https://asherpinson.com/3">
+        <meta property="og:description" content="Battle it out with up to three friends and a variety of food-based explosives to find out whose cuisine-bot ranks supreme-bot.">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://asherpinson.com/4/thumb.png">
+        <meta property="og:image" content="https://asherpinson.com/3/thumb.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
@@ -40,9 +40,9 @@
             
             <div class="right-frame-top">
                 <div class="video-background-container">
-                    <video class="video-background" loop muted autoplay poster="./thumb.png"><source src="StrongAttacks.webm" type="video/webm"></video>
-                    <h1 class="banner">The Cleaner</h1>
-                    <h3 class="banner">Student project, 2019</h3>
+                    <video class="video-background" loop muted autoplay poster="./thumb.png"><source src="./Hero.webm" type="video/webm"></video>
+                    <h1 class="banner">Starbot Showdown</h1>
+                    <h3 class="banner">Student project, 2020</h3>
                 </div>
                 <div class="data-cascade-button-group">
                     <div class="cascade-wrapper">
@@ -52,9 +52,9 @@
                     </div> 
                     <div class="button-group grid">
                         <div class="button" id="top-left">Lead Programmer</div>
-                        <div class="button" id="top-right">Project Lead</div>
-                        <div class="button" id="bottom-left">Mecanim Animator</div>
-                        <div class="button" id="bottom-right">Battle Designer</div>
+                        <div class="button" id="top-right">Gameplay Programmer</div>
+                        <div class="button" id="bottom-left">Bomb Programmer</div>
+                        <div class="button" id="bottom-right">AI Programmer</div>
                     </div>
                 </div>
                 
@@ -112,46 +112,44 @@
 
                     <h1>Info</h1>
 
-                    <a href="https://superspacehero.itch.io/thecleaner">
-                        <h2>itch.io - play online</h2>
+                    <a href="https://gmugame410-001.itch.io/starbot-showdown">
+                        <h2>itch.io - free download</h2>
                     </a>
                     
                     <div class="lcars-text-bar">
-                        <span>About The Cleaner</span>
+                        <span>About Starbot Showdown</span>
                     </div>
-                        <p>Battle the manifestations of dirt and muck that reside in the halls you've been assigned to clean.</p>
-                        <p>The Cleaner was made by a group of three for a fictional, three-button handheld console as a Game Platform Analysis project for George Mason University in the Spring of 2019.</p>
+                        <p>Battle it out with up to three friends and a variety of food-based explosives to find out whose cuisine-bot ranks supreme-bot.</p>
+                        <p>Starbot Showdown was made by 32 students for use with the Winnitron arcade game platform at George Mason University in the Spring of 2020.</p>
 
                         <hr>
                     
                         <div class="lcars-text-bar">
-                            <span>Enemy Attacks</span>
+                            <span>Extensible Explosives</span>
                         </div>
-                            <p>I made a scalable, animation-based system for attacks that allowed us to implement a variety of different attack types quickly and easily.</p>
-                            <video loop muted autoplay class="pics" alt="Enemy Attacks">
-                                <source src="EnemyAttacks.webm" type="video/webm">
+                            <p>A wide variety of explosive foodstuffs are at players' disposal. I created an inheritable base class for bombs that contained reusable functionality, enabling developers to easily expand bomb types as designers envisioned them.</p>
+                            <video loop muted autoplay class="pics" alt="Extensible Explosives">
+                                <source src="Bombs.webm" type="video/webm">
                             </video>
                     
-                            <div class="lcars-text-bar">
-                                <span>Defending Yourself</span>
-                            </div>
-                                <p>As we had to work around the constraints of the handheld only having three buttons, I used this as a source of creativity and made each of them provide a different defense:</p>
-                                <ul>
-                                    <li><span class="go-gold">Left:</span> Catch projectiles from above with a bucket over your head</li>
-                                    <li><span class="go-gold">Right:</span> Catch projectiles heading straight towards you in a bucket</li>
-                                    <li><span class="go-gold">Action:</span> Jump to avoid an attack</li>
-                                </ul>
-                                <video loop muted autoplay class="pics" alt="Defending Yourself">
-                                    <source src="Defending.webm" type="video/webm">
-                                </video>
+                        <div class="lcars-text-bar">
+                            <span>Implementing Input</span>
+                        </div>
+                            <p>Although it was still in a pre-release state at the time, I quickly learned how to use Unity's more modular Input System, implementing it to simplify the process of handling separate players' inputs down to the usage of a single function for each input.</p>
+                            <p>The pre-release state of the system meant I had to figure out some workarounds to allow for multiple players to share a keyboard, but the simplicity and modularity the system offered allowed me to get a functional prototype of the game built in only a couple days.</p>
+                            <video loop muted autoplay class="pics" alt="Implementing Input">
+                                <source src="Input.webm" type="video/webm">
+                            </video>
                     
-                                <div class="lcars-text-bar">
-                                    <span>Performing Strong Attacks</span>
-                                </div>
-                                    <p>To reward players for defending against an attack, I made catching enemy particles fill a power meter at the top of the screen. When the meter fills up, the power of their next attack increases.</p>
-                                    <video loop muted autoplay class="pics" alt="Defending Yourself">
-                                        <source src="StrongAttacks.webm" type="video/webm">
-                                    </video>
+                        <div class="lcars-text-bar">
+                            <span>Frenzy Mode</span>
+                        </div>
+                            <p>The wave-based Frenzy mode offers players a means of playing alone, but can be played cooperatively with others, as well.</p>
+                            <p>Players must defend the base in the center from enemy starbots with various types of behaviors - some try to bomb the base, some shoot burrito torpedos at players, but all share a base class for their AI that made implementing new enemy behaviors a straightforward process.</p>
+                            <p>Originally, the only singleplayer content available would have been a 15-stage tutorial of the game's bombs and mechanics, but I discussed with the design team how to reasonably offer more for singleplayer play without drastically increasing the scope of the project. This led to the creation of this mode, which retooled the tutorial's enemies to offer more fun for those playing alone.</p>
+                            <video loop muted autoplay class="pics" alt="Frenzy Mode">
+                                <source src="Frenzy.webm" type="video/webm">
+                            </video>
                     
                     <!-- End content area. -->
                 </div>

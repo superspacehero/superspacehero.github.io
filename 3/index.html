@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Asher Pinson - Starbot Showdown</title>
+        <title>Asher Pinson - Winder Walkers</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
         <link rel="manifest" href="../site.webmanifest">
 
-        <meta property="og:title" content="Asher Pinson - Starbot Showdown">
-        <meta property="og:site_name" content="Asher Pinson - Starbot Showdown">
-        <meta property="og:url" content="https://asherpinson.com/3">
-        <meta property="og:description" content="Battle it out with up to three friends and a variety of food-based explosives to find out whose cuisine-bot ranks supreme-bot.">
+        <meta property="og:title" content="Asher Pinson - Winder Walkers">
+        <meta property="og:site_name" content="Asher Pinson - Winder Walkers">
+        <meta property="og:url" content="https://asherpinson.com/2">
+        <meta property="og:description" content="Take control of a pair of wind-up toys and work together to solve puzzles and reach the goal, but don't run out of clockwork energy!">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://asherpinson.com/3/thumb.png">
+        <meta property="og:image" content="https://asherpinson.com/2/thumb.png">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
@@ -41,8 +41,8 @@
             <div class="right-frame-top">
                 <div class="video-background-container">
                     <video class="video-background" loop muted autoplay poster="./thumb.png"><source src="./Hero.webm" type="video/webm"></video>
-                    <h1 class="banner">Starbot Showdown</h1>
-                    <h3 class="banner">Student project, 2020</h3>
+                    <h1 class="banner">Winder Walkers</h1>
+                    <h3 class="banner">Indicrow Studios, 2020</h3>
                 </div>
                 <div class="data-cascade-button-group">
                     <div class="cascade-wrapper">
@@ -52,9 +52,9 @@
                     </div> 
                     <div class="button-group grid">
                         <div class="button" id="top-left">Lead Programmer</div>
-                        <div class="button" id="top-right">Gameplay Programmer</div>
-                        <div class="button" id="bottom-left">Bomb Programmer</div>
-                        <div class="button" id="bottom-right">AI Programmer</div>
+                        <div class="button" id="top-right">Project Lead</div>
+                        <div class="button" id="bottom-left">Shader Artist</div>
+                        <div class="button" id="bottom-right">Environment Artist</div>
                     </div>
                 </div>
                 
@@ -112,44 +112,41 @@
 
                     <h1>Info</h1>
 
-                    <a href="https://gmugame410-001.itch.io/starbot-showdown">
-                        <h2>itch.io - free download</h2>
+                    <a href="https://indicrowstudios.itch.io/winderwalkers">
+                        <h2>itch.io - play online</h2>
                     </a>
                     
                     <div class="lcars-text-bar">
-                        <span>About Starbot Showdown</span>
+                        <span>About Winder Walkers</span>
                     </div>
-                        <p>Battle it out with up to three friends and a variety of food-based explosives to find out whose cuisine-bot ranks supreme-bot.</p>
-                        <p>Starbot Showdown was made by 32 students for use with the Winnitron arcade game platform at George Mason University in the Spring of 2020.</p>
+                        <p>Take control of a pair of wind-up toys and work together to solve puzzles and reach the goal, but don't run out of clockwork energy!</p>
+                        <p>Winder Walkers was created as an entry for <a href="https://itch.io/jam/brackeys-4">Brackeys Jam 2020.2</a> by a team of four. Of 1,803 entries, it came in 33rd overall.</p>
 
                         <hr>
                     
                         <div class="lcars-text-bar">
-                            <span>Extensible Explosives</span>
+                            <span>Winding Down</span>
                         </div>
-                            <p>A wide variety of explosive foodstuffs are at players' disposal. I created an inheritable base class for bombs that contained reusable functionality, enabling developers to easily expand bomb types as designers envisioned them.</p>
-                            <video loop muted autoplay class="pics" alt="Extensible Explosives">
-                                <source src="Bombs.webm" type="video/webm">
+                            <video loop muted autoplay class="pics" alt="Winding Down">
+                                <source src="Energy.webm" type="video/webm">
                             </video>
-                    
+                            <p>As the game jam's theme was "rewind", I opted for us to make clockwork energy be the game's central mechanic. Each walker has a limited amount, so players must conserve it by carrying each other, splitting up to complete tasks, and keeping an eye out for wind-up stations to "rewind".
+
                         <div class="lcars-text-bar">
-                            <span>Implementing Input</span>
+                            <span>Making Mechanisms</span>
                         </div>
-                            <p>Although it was still in a pre-release state at the time, I quickly learned how to use Unity's more modular Input System, implementing it to simplify the process of handling separate players' inputs down to the usage of a single function for each input.</p>
-                            <p>The pre-release state of the system meant I had to figure out some workarounds to allow for multiple players to share a keyboard, but the simplicity and modularity the system offered allowed me to get a functional prototype of the game built in only a couple days.</p>
-                            <video loop muted autoplay class="pics" alt="Implementing Input">
-                                <source src="Input.webm" type="video/webm">
+                            <video loop muted autoplay class="pics" alt="Making Mechanisms">
+                                <source src="Mechanisms.webm" type="video/webm">
                             </video>
-                    
+                            <p>To allow for more creativity and modularity in our level design, I made a collection of mechanisms for the team to use, each sharing an underlying script that allows for buttons, levers, and wind-up mechanisms to be used interchangeably to open doors and move platforms.</p>
+
                         <div class="lcars-text-bar">
-                            <span>Frenzy Mode</span>
+                            <span>A Little Pick-Me-Up</span>
                         </div>
-                            <p>The wave-based Frenzy mode offers players a means of playing alone, but can be played cooperatively with others, as well.</p>
-                            <p>Players must defend the base in the center from enemy starbots with various types of behaviors - some try to bomb the base, some shoot burrito torpedos at players, but all share a base class for their AI that made implementing new enemy behaviors a straightforward process.</p>
-                            <p>Originally, the only singleplayer content available would have been a 15-stage tutorial of the game's bombs and mechanics, but I discussed with the design team how to reasonably offer more for singleplayer play without drastically increasing the scope of the project. This led to the creation of this mode, which retooled the tutorial's enemies to offer more fun for those playing alone.</p>
-                            <video loop muted autoplay class="pics" alt="Frenzy Mode">
-                                <source src="Frenzy.webm" type="video/webm">
+                            <video loop muted autoplay class="pics" alt="A Little Pick-Me-Up">
+                                <source src="WindUpPickUp.webm" type="video/webm">
                             </video>
+                            <p>To allow for more inter-walker interaction, I created mechanics that allow them to help each other out. When more direct assistance is needed, walkers can approach their partner to wind them back up using their own energy, or pick them up to help them conserve energy and reach new areas.</p>
                     
                     <!-- End content area. -->
                 </div>
