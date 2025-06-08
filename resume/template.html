@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="root">
+  <head>
+    <title>{{TITLE}}</title>
+
+    {{FAVICON_LINKS}}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        /* Rita's Gruvbox Color Palette */
+        --primary-light: #fef6d7;
+        --primary: #fbf1c7;
+        --primary-dark: #d5c4a1;
+        --primary-darker: #bdae93;
+
+        --secondary-light: #f4b8e4;
+        --secondary: #d3869b;
+        --secondary-dark: #b16286;
+        --secondary-darker: #8f3f71;
+
+        --background-dark: #1d2021;
+        --background: #3c3836;
+        --background-light: #504945;
+        --background-lighter: #797261;
+
+        --red: #fb4934;
+        --orange: #fe8019;
+        --yellow: #fabd2f;
+        --green: #7df46a;
+        --cyan: #82aaff;
+        --blue: #4a89dc;
+        --purple: #c792ea;
+        --brown: #e85012;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        color: var(--primary);
+        background-color: var(--background-dark);
+      }
+      h1 { border-bottom: 2px solid var(--primary-dark); padding-bottom: 10px; }
+      h2 { color: var(--secondary); margin-top: 30px; }
+      h3 { color: var(--primary-dark); margin-top: 25px; margin-bottom: 10px; }
+      h4 { color: var(--primary-darker); margin-top: 20px; margin-bottom: 8px; }
+      strong { color: var(--secondary); }
+      em { font-style: italic; color: var(--primary-dark); }
+      ul { margin: 10px 0; }
+      li { margin: 5px 0; }
+      a { color: var(--secondary); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      hr { border: none; border-top: 1px solid var(--background-light); margin: 20px 0; }
+      .highlight { background-color: var(--background-lighter); padding: 15px; border-left: 4px solid var(--orange); margin: 20px 0; }
+      
+      /* Floating PDF Button */
+      .pdf-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: var(--secondary);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: var(--primary-light);
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+      
+      .pdf-button:hover {
+        background-color: var(--secondary-dark);
+        transform: scale(1.1);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+      }
+      
+      .pdf-button:active {
+        transform: scale(0.95);
+      }
+      
+      /* Hide button when printing */
+      @media print {
+        .pdf-button {
+          display: none;
+        }
+        
+        body {
+          color: black;
+          background-color: white;
+        }
+        
+        h1 {
+          color: black;
+          border-bottom-color: black;
+        }
+        
+        h2 {
+          color: black;
+        }
+        
+        h3 {
+          color: black;
+        }
+        
+        h4 {
+          color: black;
+        }
+        
+        strong {
+          color: black;
+        }
+        
+        em {
+          color: black;
+        }
+
+        a {
+          color: black;
+        }
+        
+        hr {
+          border-top-color: black;
+        }
+        
+        .highlight {
+          background-color: white;
+          border-left-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="pdf-button" onclick="saveToPDF()" title="Save as PDF">
+      💾
+    </button>
+    
+    {{CONTENT}}
+    
+    <script>
+    function processMarkdownContent(content) {
+      return content;
+    }
+    
+    function saveToPDF() {
+      window.print();
+    }
+    </script>
+  </body>
+</html>

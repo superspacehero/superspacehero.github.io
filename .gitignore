@@ -1,1 +1,9 @@
 DontSync
+node_modules/
+package.json
+package-lock.json
+**/index.html
+
+# Generated favicons (keep only source favicon.png)
+media/favicons/*
+!media/favicons/favicon.png

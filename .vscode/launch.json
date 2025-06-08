@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "configurations": [
+    {
+      "name": "npm build",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run build",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
