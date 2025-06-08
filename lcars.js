@@ -1,25 +1,16 @@
-// document.addEventListener("touchstart", function() {},false);
-
-// $(window).scroll(function() {
-//     var height = $(window).scrollTop();
-//     if (height > 100) {
-//         $('.scroll-top a').fadeIn();
-//     } else {
-//         $('.scroll-top a').fadeOut();
-//     }
-// });
-
-// $(document).ready(function() {
-//     $("#scroll-top").click(function(event) {
-//         event.preventDefault();
-//         $("html, body").animate({ scrollTop: 0 }, "slow");
-//         return false;
-//     });
-
-// });
-
 var lastSoundPlayed = 0;
 var sounds = document.getElementsByTagName('audio');
+
+function pseudoData() {
+    // Generate between 2 and 4 random characters
+    var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var randomChars = '';
+    var numChars = Math.floor(Math.random() * 3) + 2; // Random number between 2 and 4
+    for (var i = 0; i < numChars; i++) {
+        randomChars += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return randomChars;
+}
 
 function playsound() {
     // Get a random sound from the array

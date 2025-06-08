@@ -1,30 +1,4 @@
-@charset "utf-8";
 :root {
-  /* Gruvbox Color Palette */
-  --primary-light: #fef6d7;
-  --primary: #fbf1c7;
-  --primary-dark: #d5c4a1;
-  --primary-darker: #bdae93;
-
-  --secondary-light: #f4b8e4;
-  --secondary: #d3869b;
-  --secondary-dark: #b16286;
-  --secondary-darker: #8f3f71;
-
-  --background-dark: #1d2021;
-  --background: #3c3836;
-  --background-light: #504945;
-  --background-lighter: #797261;
-
-  --red: #fb4934;
-  --orange: #fe8019;
-  --yellow: #fabd2f;
-  --green: #7df46a;
-  --cyan: #82aaff;
-  --blue: #4a89dc;
-  --purple: #c792ea;
-  --brown: #e85012;
-
   font-size: 1.35rem;
 }
 
@@ -84,7 +58,12 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-light);
+  filter: brightness(125%);
+}
+
+a:active,
+a:focus {
+  filter: brightness(75%);
 }
 
 .contact {
@@ -100,6 +79,13 @@ a:hover {
   margin-bottom: 5px;
   margin-left: 5px;
   /* padding-left: 5px; */
+  
+  /* Ensure container is properly rendered */
+  overflow: hidden;
+  
+  /* Force compositing layer for better video performance */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .video-background {
@@ -110,6 +96,20 @@ a:hover {
   object-position: 0 0;
   z-index: -1;
   /* opacity: 0.5; */
+  
+  /* Enhanced browser compatibility */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  
+  /* Force hardware acceleration */
+  will-change: transform;
+  
+  /* Ensure video is visible */
+  visibility: visible;
+  display: block;
 }
 
 .software-icons {
@@ -228,13 +228,13 @@ a:hover {
 .panel-1 {
   display: block;
   background-color: var(--purple);
-  background-image: url("icon.gif");
+  background-image: url("media/icons/splink.svg");
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50% 50%;
   padding: 82px 10px 15px 0;
   text-decoration: none;
   text-shadow: 0px 0px 10px black;
-  color: azure;
+  color: var(--primary-light);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -242,8 +242,9 @@ a:hover {
 }
 
 .panel-1 a:active,
-.panel-1 a:focus {
-  filter: brightness(70%);
+.panel-1 a:focus,
+.panel-1 a:hover {
+  color: var(--yellow);
   text-decoration: none;
   border-bottom: none;
   outline: 0;

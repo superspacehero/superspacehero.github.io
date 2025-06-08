@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{FULL_TITLE}}</title>
+
+    {{FAVICON_LINKS}}
+
+    <meta property="og:title" content="{{FULL_TITLE}}" />
+    <meta property="og:site_name" content="{{FULL_TITLE}}" />
+    <meta property="og:url" content="{{URL}}" />
+    <meta property="og:description" content="{{DESCRIPTION}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{BASE_PATH}}media/icons/splink.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+
+    <link rel="stylesheet" type="text/css" href="ritas-gruvbox.css" />
+    <link rel="stylesheet" type="text/css" href="lcars-classic.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="wrap">
+      <div class="left-frame-top">
+        <a class="panel-1" href="{{BASE_PATH}}index.html">{{FIRST_NAME}}<span class="hop"> {{LAST_NAME}}</span></a>
+        <div class="panel-4"></div>
+        <div class="panel-2"></div>
+      </div>
+
+      <div class="right-frame-top">
+        <div class="video-background-container">
+          <video
+            class="video-background"
+            id="videos"
+            loop
+            muted
+            autoplay
+            playsinline
+            preload="auto"
+            poster="{{VIDEO_POSTER}}"
+          >
+            <source src="{{VIDEO_SOURCE}}" type="video/webm" />
+            <source src="{{VIDEO_SOURCE_MP4}}" type="video/mp4" />
+          </video>
+          <h1 class="banner">{{TITLE}}</h1>
+          <h3 class="banner">{{SUBTITLE}}</h3>
+        </div>
+        <div class="data-cascade-button-group">
+          <div class="cascade-wrapper">
+            <div class="data-cascade" id="default">
+              <div class="row-1">
+                <div class="dc1"></div>
+                <div class="dc2"></div>
+                <div class="dc3"></div>
+                <div class="dc4"></div>
+                <div class="dc5"></div>
+                <div class="dc6"></div>
+                <div class="dc7"></div>
+                <div class="dc8"></div>
+                <div class="dc9"></div>
+                <div class="dc10"></div>
+                <div class="dc11"></div>
+                <div class="dc12"></div>
+                <div class="dc13"></div>
+                <div class="dc14"></div>
+              </div>
+              <div class="row-2">
+                <div class="dc1"></div>
+                <div class="dc2"></div>
+                <div class="dc3"></div>
+                <div class="dc4"></div>
+                <div class="dc5"></div>
+                <div class="dc6"></div>
+                <div class="dc7"></div>
+                <div class="dc8"></div>
+                <div class="dc9"></div>
+                <div class="dc10"></div>
+                <div class="dc11"></div>
+                <div class="dc12"></div>
+                <div class="dc13"></div>
+                <div class="dc14"></div>
+              </div>
+              <div class="row-3">
+                <div class="dc1"></div>
+                <div class="dc2"></div>
+                <div class="dc3"></div>
+                <div class="dc4"></div>
+                <div class="dc5"></div>
+                <div class="dc6"></div>
+                <div class="dc7"></div>
+                <div class="dc8"></div>
+                <div class="dc9"></div>
+                <div class="dc10"></div>
+                <div class="dc11"></div>
+                <div class="dc12"></div>
+                <div class="dc13"></div>
+                <div class="dc14"></div>
+              </div>
+              <div class="row-4">
+                <div class="dc1"></div>
+                <div class="dc2"></div>
+                <div class="dc3"></div>
+                <div class="dc4"></div>
+                <div class="dc5"></div>
+                <div class="dc6"></div>
+                <div class="dc7"></div>
+                <div class="dc8"></div>
+                <div class="dc9"></div>
+                <div class="dc10"></div>
+                <div class="dc11"></div>
+                <div class="dc12"></div>
+                <div class="dc13"></div>
+                <div class="dc14"></div>
+              </div>
+              <div class="row-5">
+                <div class="dc1"></div>
+                <div class="dc2"></div>
+                <div class="dc3"></div>
+                <div class="dc4"></div>
+                <div class="dc5"></div>
+                <div class="dc6"></div>
+                <div class="dc7"></div>
+                <div class="dc8"></div>
+                <div class="dc9"></div>
+                <div class="dc10"></div>
+                <div class="dc11"></div>
+                <div class="dc12"></div>
+                <div class="dc13"></div>
+                <div class="dc14"></div>
+              </div>
+              <div class="row-6">
+                <div class="dc1"></div>
+                <div class="dc2"></div>
+                <div class="dc3"></div>
+                <div class="dc4"></div>
+                <div class="dc5"></div>
+                <div class="dc6"></div>
+                <div class="dc7"></div>
+                <div class="dc8"></div>
+                <div class="dc9"></div>
+                <div class="dc10"></div>
+                <div class="dc11"></div>
+                <div class="dc12"></div>
+                <div class="dc13"></div>
+                <div class="dc14"></div>
+              </div>
+            </div>
+          </div>
+          <div class="button-group grid">
+            <div class="button" id="top-left">{{BUTTON_TOP_LEFT}}</div>
+            <div class="button" id="top-right">{{BUTTON_TOP_RIGHT}}</div>
+            <div class="button" id="bottom-left">{{BUTTON_BOTTOM_LEFT}}</div>
+            <div class="button" id="bottom-right">{{BUTTON_BOTTOM_RIGHT}}</div>
+          </div>
+        </div>
+
+        <div class="runner">
+          <div class="top-corner-bg">
+            <div class="top-corner"></div>
+          </div>
+          <div class="block-2"></div>
+          <div class="block-4">
+            <div class="block-4-floatbar-top"></div>
+          </div>
+        </div>
+
+        <div class="bar-panel">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+          <div class="bar-4"><div class="bar-4-inside"></div></div>
+          <div class="bar-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="wrap" id="gap">
+      <div class="left-frame" id="short">
+        <div>
+          <div class="panel-3"></div>
+          <div class="panel-8"></div>
+          <div class="panel-4"></div>
+          <div class="panel-2"></div>
+        </div>
+      </div>
+      <div class="right-frame">
+        <div class="bar-panel">
+          <div class="bar-6"></div>
+          <div class="bar-7"></div>
+          <div class="bar-8"></div>
+          <div class="bar-9"><div class="bar-9-inside"></div></div>
+          <div class="bar-10"></div>
+        </div>
+        <div class="runner">
+          <div class="corner-bg">
+            <div class="corner"></div>
+          </div>
+          <div class="block-2"></div>
+          <div class="block-4b">
+            <div class="block-4-floatbar-bottom"></div>
+            <div class="block-4-thinbar"></div>
+          </div>
+        </div>
+        <div class="content">
+          <!-- Start your content here. -->
+          {{CONTENT}}
+          <!-- End content area. -->
+        </div>
+
+        <div class="runner">
+          <div class="top-corner-bg">
+            <div class="top-corner"></div>
+          </div>
+          <div class="block-2"></div>
+          <div class="block-4">
+            <div class="block-4-floatbar-top"></div>
+          </div>
+        </div>
+
+        <div class="bar-panel">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+          <div class="bar-4"><div class="bar-4-inside"></div></div>
+          <div class="bar-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="wrap" id="gap">
+      <div class="left-frame bottom" id="short">
+        <div>
+          <div class="panel-3"></div>
+          <div class="panel-4"></div>
+          <div class="panel-5"></div>
+        </div>
+      </div>
+
+      <div class="right-frame">
+        <div class="bar-panel">
+          <div class="bar-6"></div>
+          <div class="bar-7"></div>
+          <div class="bar-8"></div>
+          <div class="bar-9"><div class="bar-9-inside"></div></div>
+          <div class="bar-10"></div>
+        </div>
+        <div class="runner">
+          <div class="corner-bg">
+            <div class="corner"></div>
+          </div>
+          <div class="block-2"></div>
+          <div class="block-4b">
+            <div class="block-4-floatbar-bottom"></div>
+            <div class="block-4-thinbar"></div>
+          </div>
+        </div>
+
+        <div class="content">
+          <footer id="gap">
+            <div class="footer-inside">
+              <div class="footer-text">
+                <a rel="me" href="{{GITHUB}}"
+                  >©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Rita Wattson.</a
+                >
+                <p>
+                  LCARS-Inspired Website Template by
+                  <a href="https://www.thelcars.com">www.TheLCARS.com</a> and
+                  modified by {{FIRST_NAME}} {{LAST_NAME}}.
+                </p>
+              </div>
+            </div>
+            <div class="footer-panel"></div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="lcars.js"></script>
+    
+    <script>
+    // Populate data cascade elements with pseudo data
+    document.addEventListener('DOMContentLoaded', function() {
+      // Only run if pseudoData function is available (not during build process)
+      if (typeof pseudoData === 'function') {
+        const dcElements = document.querySelectorAll('[class^="dc"]');
+        dcElements.forEach(function(element) {
+          element.textContent = pseudoData();
+        });
+      }
+    });
+    </script>
+    
+    <script>
+    // Template-specific markdown processing function
+    // This can be overridden in local templates for different behavior
+    function processMarkdownContent(content) {
+      // Convert underlines to go-yellow spans
+      content = content.replace(/__([^_]+)__/g, '<span class="go-yellow">$1</span>');
+      
+      // Replace ### headings with LCARS text bars
+      content = content.replace(/^### (.+)$/gm, '<div class="lcars-text-bar"><span>$1</span></div>');
+      
+      // Process grid blocks
+      content = content.replace(/```grid\n([\s\S]*?)\n```/g, (match, tableContent) => {
+        const lines = tableContent.trim().split('\n').filter(line => line.trim());
+        const gridItems = [];
+        
+        lines.forEach(line => {
+          const cells = line.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
+          cells.forEach(cell => {
+            if (cell.includes('![') && cell.includes('](')) {
+              const imgMatch = cell.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+              if (imgMatch) {
+                const alt = imgMatch[1];
+                const src = imgMatch[2];
+                // Check if src ends with / (directory path)
+                if (src.endsWith('/')) {
+                  gridItems.push(`<a class="col" href="${src}index.html">
+        <img class="pics" src="${src}/media/videos/Hero.png" alt="${alt}" />
+        <p class="caption">${alt}</p>
+      </a>`);
+                }
+              }
+            } else if (cell.includes('[') && cell.includes('](')) {
+              // Handle text links like [Resume](resume/)
+              const linkMatch = cell.match(/\[([^\]]*)\]\(([^)]+)\)/);
+              if (linkMatch) {
+                const text = linkMatch[1];
+                const href = linkMatch[2];
+                if (href.endsWith('/')) {
+                  gridItems.push(`<a class="col" href="${href}index.html">
+        <p class="caption">${text}</p>
+      </a>`);
+                } else {
+                  gridItems.push(`<a class="col" href="${href}">
+        <p class="caption">${text}</p>
+      </a>`);
+                }
+              }
+            }
+          });
+        });
+        
+        return `<div class="grid">
+      ${gridItems.join('\n      ')}
+    </div>`;
+      });
+      
+      // Process software-icons blocks  
+      content = content.replace(/```software-icons\n([\s\S]*?)\n```/g, (match, tableContent) => {
+        const lines = tableContent.trim().split('\n').filter(line => line.trim());
+        const iconItems = [];
+        
+        lines.forEach(line => {
+          const cells = line.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
+          cells.forEach(cell => {
+            if (cell.includes('![') && cell.includes('](')) {
+              const imgMatch = cell.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+              if (imgMatch) {
+                const alt = imgMatch[1];
+                const src = imgMatch[2];
+                iconItems.push(`<div>
+        <img src="${src}" alt="${alt}" title="${alt}" class="pics" />
+        <p class="caption">${alt}</p>
+      </div>`);
+              }
+            }
+          });
+        });
+        
+        return `<div class="software-icons">
+      ${iconItems.join('\n      ')}
+    </div>`;
+      });
+      
+      // Convert standard markdown images/videos to HTML with proper classes
+      content = content.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
+        if (src.endsWith('.webm') || src.endsWith('.mp4')) {
+          return `<video loop muted autoplay class="pics" alt="${alt}">
+      <source src="${src}" type="video/${src.split('.').pop()}" />
+    </video>`;
+        } else {
+          return `<img class="pics" src="${src}" alt="${alt}" />`;
+        }
+      });
+      
+      // Process regular Markdown links to handle directory paths ending with /
+      content = content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, href) => {
+        if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('http')) {
+          // Don't modify external links, email or phone links
+          return match;
+        } else if (href.endsWith('/')) {
+          // Add index.html to directory paths
+          return `[${text}](${href}index.html)`;
+        } else {
+          return match;
+        }
+      });
+      
+      return content;
+    }
+    </script>
+    
+    <!-- Video Loading Enhancement Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('videos');
+      if (!video) return;
+      
+      // Skip video operations during build time (JSDOM environment)
+      if (typeof window === 'undefined' || typeof window.location === 'undefined' || 
+          window.location.protocol === 'about:') {
+        return;
+      }
+      
+      // Force video loading and handle autoplay restrictions
+      function initializeVideo() {
+        try {
+          video.load();
+          
+          // Try to play the video
+          const playPromise = video.play();
+          
+          if (playPromise !== undefined) {
+            playPromise.then(() => {
+              console.log('Video autoplay started successfully');
+            }).catch(error => {
+              console.log('Autoplay prevented, video will start on first user interaction:', error.name);
+              
+              // Add click handler to start video on user interaction
+              const startVideoOnInteraction = function() {
+                video.play().then(() => {
+                  console.log('Video started after user interaction');
+                }).catch(e => {
+                  console.log('Video play failed:', e);
+                });
+                
+                // Remove the event listeners after first interaction
+                document.removeEventListener('click', startVideoOnInteraction);
+                document.removeEventListener('keydown', startVideoOnInteraction);
+                document.removeEventListener('touchstart', startVideoOnInteraction);
+              };
+              
+              document.addEventListener('click', startVideoOnInteraction);
+              document.addEventListener('keydown', startVideoOnInteraction);
+              document.addEventListener('touchstart', startVideoOnInteraction);
+            });
+          }
+        } catch (e) {
+          console.log('Video initialization failed:', e);
+        }
+      }
+      
+      // Handle video loading errors
+      video.addEventListener('error', function(e) {
+        console.log('Video error:', e);
+        // Try to reload the video after a short delay
+        setTimeout(() => {
+          try {
+            video.load();
+          } catch (err) {
+            console.log('Video reload failed:', err);
+          }
+        }, 1000);
+      });
+      
+      // Handle successful loading
+      video.addEventListener('loadeddata', function() {
+        console.log('Video loaded successfully');
+      });
+      
+      // Handle metadata loading
+      video.addEventListener('loadedmetadata', function() {
+        console.log('Video metadata loaded');
+      });
+      
+      // Initialize video
+      initializeVideo();
+      
+      // Re-initialize video on page visibility change (fixes back/forward navigation issues)
+      document.addEventListener('visibilitychange', function() {
+        if (!document.hidden && video.paused) {
+          console.log('Page became visible, restarting video');
+          initializeVideo();
+        }
+      });
+      
+      // Handle browser back/forward navigation
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted && video.paused) {
+          console.log('Page restored from cache, restarting video');
+          initializeVideo();
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

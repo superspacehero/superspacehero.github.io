@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="root">
+  <head>
+    <title>{{TITLE}}</title>
+
+    {{FAVICON_LINKS}}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../ritas-gruvbox.css" />
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
+    <button class="pdf-button" onclick="saveToPDF()" title="Save as PDF">
+      💾
+    </button>
+    
+    {{CONTENT}}
+    
+    <script>
+    function saveToPDF() {
+      window.print();
+    }
+    </script>
+  </body>
+</html>
