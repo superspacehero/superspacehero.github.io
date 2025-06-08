@@ -1,0 +1,26 @@
+:root {
+  /* Rita's Gruvbox Color Palette */
+  --primary-light: #fef6d7;
+  --primary: #fbf1c7;
+  --primary-dark: #d5c4a1;
+  --primary-darker: #bdae93;
+
+  --secondary-light: #f4b8e4;
+  --secondary: #d3869b;
+  --secondary-dark: #b16286;
+  --secondary-darker: #8f3f71;
+
+  --background-dark: #1d2021;
+  --background: #3c3836;
+  --background-light: #504945;
+  --background-lighter: #797261;
+
+  --red: #fb4934;
+  --orange: #fe8019;
+  --yellow: #fabd2f;
+  --green: #7df46a;
+  --cyan: #82aaff;
+  --blue: #4a89dc;
+  --purple: #9437ff;
+  --brown: #5f2007;
+}

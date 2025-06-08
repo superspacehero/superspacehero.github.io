@@ -1,0 +1,15 @@
+{
+  "firstName": "Rita",
+  "lastName": "Wattson",
+  "legalName": "Asher Pinson",
+  "email": "me@ritawattson.com",
+  "city": "Pittsburgh, Pennsylvania",
+  "phone": "+1 (234) 564-0283",
+  "github": "https://github.com/superspacehero",
+  "bluesky": "https://bsky.app/profile/superspacehero.bsky.social",
+  "linkedin": "https://linkedin.com/in/ritawattson",
+  "siteTitle": "{{FIRST_NAME}} {{LAST_NAME}}",
+  "siteSubtitle": "Tool Programmer, Technical Artist",
+  "siteDescription": "Tool Programmer, Technical Artist",
+  "siteUrl": "https://ritawattson.com"
+}

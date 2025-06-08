@@ -1,0 +1,29 @@
+{
+  "name": "superspacehero.github.io",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "build": "node build.js && node build-portfolio.js",
+    "build:site": "node build.js",
+    "build:portfolio": "node build-portfolio.js",
+    "test": "node build.js && node build-portfolio.js && xdg-open portfolio.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superspacehero/superspacehero.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superspacehero/superspacehero.github.io/issues"
+  },
+  "homepage": "https://github.com/superspacehero/superspacehero.github.io#readme",
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "jsdom": "^26.1.0",
+    "marked": "^15.0.12",
+    "sharp": "^0.34.2"
+  }
+}

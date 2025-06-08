@@ -1,1 +1,22 @@
-DontSync
+# Explicitly unsynced files
+**/DontSync
+
+# Logs
+**/*.log
+
+# Node.js dependencies
+node_modules/
+
+# Generated pages
+**/index.html
+
+
+# Video posters
+**/videos/*.{png,jpg}
+
+# Generated favicons (keep only source favicon.png)
+media/favicons/*
+!media/favicons/favicon.png
+
+# Generated portfolio files
+portfolio*.html

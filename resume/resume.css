@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 5px 5px 0 0;
+  background-color: var(--background-dark);
+  font-family: Antonio, "Arial Narrow", "Avenir Next Condensed", sans-serif;
+  line-height: 1.5;
+  color: var(--primary);
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Antonio';
+  font-weight: 400;
+  src: url('../Antonio-Regular.woff2') format('woff2'),
+    url('../Antonio-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Antonio';
+  font-weight: 700;
+  src: url('../Antonio-Bold.woff2') format('woff2'),
+    url('../Antonio-Bold.woff') format('woff')
+}
+
+h1 { border-bottom: 2px solid var(--primary-dark); padding-bottom: 10px; }
+h2 { color: var(--secondary); margin-top: 30px; }
+h3 { color: var(--primary-dark); margin-top: 25px; margin-bottom: 10px; }
+h4 { color: var(--primary-darker); margin-top: 20px; margin-bottom: 8px; }
+strong { color: var(--secondary); }
+em { font-style: italic; color: var(--primary-dark); }
+ul { margin: 10px 0; }
+li { margin: 5px 0; }
+a { color: var(--secondary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: none; border-top: 1px solid var(--background-light); margin: 20px 0; }
+.highlight { background-color: var(--background-lighter); padding: 15px; border-left: 4px solid var(--orange); margin: 20px 0; }
+
+/* Floating PDF Button */
+.pdf-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--primary-light);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.pdf-button:hover {
+  background-color: var(--secondary-dark);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-button:active {
+  transform: scale(0.95);
+}
+
+/* Hide button when printing */
+@media print {
+  .pdf-button {
+    display: none;
+  }
+  
+  body {
+    color: black;
+    background-color: white;
+  }
+  
+  h1 {
+    color: black;
+    border-bottom-color: black;
+  }
+  
+  h2 {
+    color: black;
+  }
+  
+  h3 {
+    color: black;
+  }
+  
+  h4 {
+    color: black;
+  }
+  
+  strong {
+    color: black;
+  }
+  
+  em {
+    color: black;
+  }
+
+  a {
+    color: black;
+  }
+  
+  hr {
+    border-top-color: black;
+  }
+  
+  .highlight {
+    background-color: white;
+    border-left-color: black;
+  }
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{FULL_TITLE}}</title>
+  <meta charset="utf-8">
+
+  {{FAVICON_LINKS}}
+
+  <meta property="og:title" content="{{FULL_TITLE}}" />
+  <meta property="og:site_name" content="{{FULL_TITLE}}" />
+  <meta property="og:url" content="{{URL}}" />
+  <meta property="og:description" content="{{DESCRIPTION}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{URL}}/media/icons/rita.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="date=no" />
+
+  <link rel="stylesheet" type="text/css" href="{{BASE}}lcars.css" />
+  <link rel="stylesheet" type="text/css" href="{{BASE}}ritas-gruvbox.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <div class="left-frame-top">
+      <a class="panel-1" href="{{BASE}}">{{FIRST_NAME}} <span class="hop">{{LAST_NAME}}</span></a>
+      <div class="panel-4"></div>
+      <div class="panel-2"></div>
+    </div>
+
+    <div class="right-frame-top">
+      <div class="video-background-container">
+        <video class="video-background" id="videos" loop muted autoplay playsinline preload="auto">
+          <source src="{{VIDEO_SOURCE}}" type="video/webm" />
+        </video>
+        <h1 class="banner">{{TITLE}}</h1>
+        <h3 class="banner">{{SUBTITLE}}</h3>
+      </div>
+      <div class="data-cascade-button-group">
+        <div class="data-cascade-wrapper" id="default"></div>
+        <div class="button-group grid">
+          <div class="button" id="top-left">{{BUTTON_TOP_LEFT}}</div>
+          <div class="button" id="top-right">{{BUTTON_TOP_RIGHT}}</div>
+          <div class="button" id="bottom-left">{{BUTTON_BOTTOM_LEFT}}</div>
+          <div class="button" id="bottom-right">{{BUTTON_BOTTOM_RIGHT}}</div>
+        </div>
+      </div>
+
+      <div class="runner">
+        <div class="top-corner-bg">
+          <div class="top-corner"></div>
+        </div>
+        <div class="block-2"></div>
+        <div class="block-4">
+          <div class="block-4-floatbar-top"></div>
+        </div>
+      </div>
+
+      <div class="bar-panel">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+        <div class="bar-4">
+          <div class="bar-4-inside"></div>
+        </div>
+        <div class="bar-5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" id="gap">
+    <!-- Main Content -->
+    <div class="left-frame" id="short">
+      <div>
+        <div class="panel-3"></div>
+        <div class="panel-8"></div>
+        <div class="panel-4"></div>
+        <div class="panel-2"></div>
+      </div>
+    </div>
+    <div class="right-frame">
+      <div class="bar-panel">
+        <div class="bar-6"></div>
+        <div class="bar-7"></div>
+        <div class="bar-8"></div>
+        <div class="bar-9">
+          <div class="bar-9-inside"></div>
+        </div>
+        <div class="bar-10"></div>
+      </div>
+      <div class="runner">
+        <div class="corner-bg">
+          <div class="corner"></div>
+        </div>
+        <div class="block-2"></div>
+        <div class="block-4b">
+          <div class="block-4-floatbar-bottom"></div>
+          <div class="block-4-thinbar"></div>
+        </div>
+      </div>
+      <div class="content">
+        <!-- Start your content here. -->
+        {{CONTENT}}
+        <!-- End content area. -->
+      </div>
+
+      <div class="runner">
+        <div class="top-corner-bg">
+          <div class="top-corner"></div>
+        </div>
+        <div class="block-2"></div>
+        <div class="block-4">
+          <div class="block-4-floatbar-top"></div>
+        </div>
+      </div>
+
+      <div class="bar-panel">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+        <div class="bar-4">
+          <div class="bar-4-inside"></div>
+        </div>
+        <div class="bar-5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" id="gap">
+    <!-- Footer -->
+    <div class="left-frame bottom" id="short">
+      <div>
+        <div class="panel-3"></div>
+        <div class="panel-4"></div>
+        <div class="panel-5"></div>
+      </div>
+    </div>
+
+    <div class="right-frame">
+      <div class="bar-panel">
+        <div class="bar-6"></div>
+        <div class="bar-7"></div>
+        <div class="bar-8"></div>
+        <div class="bar-9">
+          <div class="bar-9-inside"></div>
+        </div>
+        <div class="bar-10"></div>
+      </div>
+      <div class="runner">
+        <div class="corner-bg">
+          <div class="corner"></div>
+        </div>
+        <div class="block-2"></div>
+        <div class="block-4b">
+          <div class="block-4-floatbar-bottom"></div>
+          <div class="block-4-thinbar"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <footer id="gap">
+          <div class="footer-inside">
+            <div class="footer-text">
+              <a href="{{GITHUB}}" target="_blank">© <span class="dynamic-years" data-type="current-year"></span>
+                {{FIRST_NAME}} {{LAST_NAME}}.</a>
+              <p>LCARS-Inspired Website Template by <a href="https://www.thelcars.com"
+                  target="_blank">www.TheLCARS.com</a> and modified by {{FIRST_NAME}} {{LAST_NAME}}.</p>
+            </div>
+          </div>
+          <div class="footer-panel"></div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const currentDate = new Date();
+
+    const startedGameDev = new Date('2009-06-01');
+
+    const currentlyWorking = false;
+    const startedWorking = new Date('2020-12-18');
+    const lastWorked = new Date('2025-01-24'); // Will set to null when I get another job
+
+    const years = 1000 * 60 * 60 * 24 * 365.25; // Average year length in milliseconds
+    const yearsWorked = Math.round(((lastWorked || currentDate) - startedWorking) / years);
+    const gameDevExperience = Math.round((currentDate - startedGameDev) / years);
+
+    function pseudoData() {
+      // Generate between 2 and 4 random characters
+      var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      var randomChars = '';
+      var numChars = Math.floor(Math.random() * 3) + 2; // Random number between 2 and 4
+      for (var i = 0; i < numChars; i++) {
+        randomChars += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return randomChars;
+    }
+
+    function createDynamicDataCascade() {
+      const dataCascadeWrapper = document.querySelector('.data-cascade-wrapper');
+      const buttonGroup = document.querySelector('.button-group.grid');
+
+      if (!dataCascadeWrapper || !buttonGroup) return;
+
+      // Check if data cascade should be hidden (responsive breakpoint)
+      const cascadeStyle = getComputedStyle(dataCascadeWrapper);
+      if (cascadeStyle.display === 'none') {
+        dataCascadeWrapper.innerHTML = '';
+        return;
+      }
+
+      // Force layout calculation by accessing offsetHeight
+      const buttonGroupHeight = buttonGroup.getBoundingClientRect().height;
+
+      // Get the actual row height from CSS variable
+      const computedStyle = getComputedStyle(document.documentElement);
+      const dcRowHeightStr = computedStyle.getPropertyValue('--dc-row-height').trim();
+
+      // Parse the calc() value or fallback to manual calculation
+      let rowHeightPx;
+      if (dcRowHeightStr.includes('calc')) {
+        // Create a temporary element to calculate the actual height
+        const tempEl = document.createElement('div');
+        tempEl.style.height = dcRowHeightStr;
+        tempEl.style.position = 'absolute';
+        tempEl.style.visibility = 'hidden';
+        document.body.appendChild(tempEl);
+        rowHeightPx = tempEl.getBoundingClientRect().height;
+        document.body.removeChild(tempEl);
+      } else {
+        // Fallback: parse rem value and convert to pixels
+        const dcFontSizeRem = parseFloat(computedStyle.getPropertyValue('--dc-font-size')) || 0.875;
+        const rootFontSize = parseFloat(computedStyle.fontSize);
+        rowHeightPx = (dcFontSizeRem + 0.125) * rootFontSize;
+      }
+
+      // Calculate number of rows needed to match button group height
+      const numRows = Math.max(1, Math.floor(buttonGroupHeight / rowHeightPx));
+
+      // Get available width for the data cascade
+      const cascadeRect = dataCascadeWrapper.getBoundingClientRect();
+      const availableWidth = cascadeRect.width;
+
+      // Calculate column gap from CSS
+      const columnGapRem = parseFloat(computedStyle.getPropertyValue('column-gap')) || 5; // 5px default from CSS
+
+      // Determine optimal number of columns (aim for good visual density)
+      const minColumns = 8;  // Minimum columns for visual effect
+
+      // Start with a reasonable number of columns and adjust font size to fit
+      let targetColumns = Math.max(minColumns, Math.floor(availableWidth / 40)); // ~40px per column as starting point
+
+      // Calculate what font size we need to fit the target number of columns
+      const availableWidthForColumns = availableWidth - (columnGapRem * (targetColumns - 1));
+      const targetColumnWidth = availableWidthForColumns / targetColumns;
+
+      // Estimate character width ratio (approximately 0.6 for condensed fonts like Antonio)
+      const avgCharWidth = 0.6;
+      const avgCharsPerColumn = 3.5; // Average between 2-4 characters
+      const targetFontSize = (targetColumnWidth / (avgCharsPerColumn * avgCharWidth));
+
+      // Clamp font size to reasonable bounds (between 8px and 16px)
+      const minFontSize = 8;
+      const maxFontSize = 16;
+      const actualFontSize = Math.max(minFontSize, Math.min(maxFontSize, targetFontSize));
+
+      // Recalculate actual columns based on the clamped font size
+      const actualCharWidth = actualFontSize * avgCharWidth;
+      const actualColumnWidth = actualCharWidth * avgCharsPerColumn;
+      const actualColumns = Math.floor((availableWidth + columnGapRem) / (actualColumnWidth + columnGapRem));
+      const finalColumns = Math.max(minColumns, actualColumns);
+
+      // Clear existing content
+      dataCascadeWrapper.innerHTML = '';
+
+      // Create columns and rows dynamically with custom font size
+      for (let col = 0; col < finalColumns; col++) {
+        const column = document.createElement('div');
+        column.className = 'data-column';
+
+        // Apply calculated font size to this column
+        column.style.fontSize = actualFontSize + 'px';
+
+        for (let row = 0; row < numRows; row++) {
+          const rowElement = document.createElement('div');
+          rowElement.className = 'dc-row-' + ((row % 7) + 1); // Cycle through animation classes
+
+          // Add pseudo data
+          rowElement.textContent = pseudoData();
+
+          column.appendChild(rowElement);
+        }
+
+        dataCascadeWrapper.appendChild(column);
+      }
+    }
+
+    // Populate data cascade elements with pseudo data
+    document.addEventListener('DOMContentLoaded', function () {
+      // Only run if not building
+      if (typeof window !== 'undefined') {
+        // Wait a bit for CSS to be fully applied and layout to be calculated
+        setTimeout(function () {
+          // Create dynamic data cascade to match button group height
+          createDynamicDataCascade();
+        }, 50);
+
+        // Also regenerate on window resize to maintain responsiveness
+        let resizeTimeout;
+        window.addEventListener('resize', function () {
+          clearTimeout(resizeTimeout);
+          resizeTimeout = setTimeout(createDynamicDataCascade, 150);
+        });
+
+        // Populate dynamic years spans with computed values
+        const yearsSpans = document.querySelectorAll('span.dynamic-years');
+        yearsSpans.forEach(function (span) {
+          const type = span.getAttribute('data-type');
+          switch (type) {
+            case 'worked':
+              span.textContent = yearsWorked;
+              break;
+            case 'gamedev':
+              span.textContent = gameDevExperience;
+              break;
+            default:
+              span.textContent = currentDate.getFullYear();
+              break;
+          }
+        });
+      }
+    });
+  </script>
+
+  <script class="process-markdown">
+    // Template-specific markdown processing
+
+    // Convert underlines to go-yellow spans
+    content = content.replace(/__([^_]+)__/g, '<span class="go-yellow">$1</span>');
+
+    // Replace ### headings with LCARS text bars
+    content = content.replace(/^###\s+(.+)$/gm, '<div class="lcars-text-bar"><span>$1</span></div>');
+
+    // Process !button[text](url) syntax
+    content = content.replace(/!button\[([^\]]+)\]\(([^)]+)\)/g, (match, text, href) => {
+      return `<a class="button" href="${href}">${text}</a>`;
+    });
+
+    // Process !grid| syntax and content
+    content = content.replace(/^!grid\|\s*(.*?)$/gm, (match, gridContent) => {
+      const cells = gridContent.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
+      const gridItems = [];
+
+      cells.forEach(cell => {
+        let caption = ''
+
+        const mdFile = `${outputDir}/${cell}/index.md`;
+        // Extract caption from the cell's markdown
+        if (existsSync(mdFile)) {
+          const parsedCell = fm(readFileSync(mdFile, 'utf8'));
+          if (parsedCell && parsedCell.attributes) {
+            if (parsedCell.attributes.title) {
+              caption = (parsedCell.attributes.platform && parsedCell.attributes.year) ? `${parsedCell.attributes.title} (${parsedCell.attributes.platform} - ${parsedCell.attributes.year})` : parsedCell.attributes.title;
+            } else {
+              caption = `No title found at '${mdFile}'`;
+            }
+          }
+        } else {
+          caption = `No markdown found at '${mdFile}'`;
+        }
+
+        gridItems.push(`<a class="col" href="${cell}"><img class="pics" src="${cell}/media/videos/Hero.png" alt="${caption}" /><p class="caption">${caption}</p></a>`);
+      });
+
+      return `<div class="grid">${gridItems.join('')}</div>`;
+    });
+
+    // Process !software-icons| syntax and content
+    content = content.replace(/^!software-icons\|\s*(.*?)$/gm, (match, iconsContent) => {
+      const cells = iconsContent.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
+      const iconItems = [];
+
+      cells.forEach(cell => {
+        // Check for already processed HTML img tags
+        if (cell.includes('<img') && cell.includes('src=')) {
+          const imgMatch = cell.match(/<img[^>]+src="([^"]+)"[^>]+alt="([^"]*)"[^>]*\/>/);
+          if (imgMatch) {
+            const src = imgMatch[1];
+            const alt = imgMatch[2];
+            iconItems.push(`<div>
+        <img src="${src}" alt="${alt}" title="${alt}" class="pics" />
+        <p class="caption">${alt}</p>
+      </div>`);
+          }
+        }
+        // Check for original markdown format (fallback)
+        else if (cell.includes('![') && cell.includes('](')) {
+          const imgMatch = cell.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+          if (imgMatch) {
+            const alt = imgMatch[1];
+            const src = imgMatch[2];
+            iconItems.push(`<div>
+        <img src="${src}" alt="${alt}" title="${alt}" class="pics" />
+        <p class="caption">${alt}</p>
+      </div>`);
+          }
+        }
+      });
+
+      return `<div class="software-icons">
+      ${iconItems.join('\n      ')}
+    </div>`;
+    });
+  </script>
+
+  <!-- Video Loading Enhancement Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const video = document.getElementById('videos');
+      if (!video) return;
+
+      // Skip video operations during build time (JSDOM environment)
+      if (typeof window === 'undefined' || typeof window.location === 'undefined' ||
+        window.location.protocol === 'about:') {
+        return;
+      }
+
+      // Force video loading and handle autoplay restrictions
+      function initializeVideo() {
+        try {
+          video.load();
+
+          // Try to play the video
+          const playPromise = video.play();
+
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              console.log('Autoplay prevented, video will start on first user interaction:', error.name);
+
+              // Add click handler to start video on user interaction
+              const startVideoOnInteraction = function () {
+                video.play().catch(e => {
+                  console.log('Video play failed:', e);
+                });
+
+                // Remove the event listeners after first interaction
+                document.removeEventListener('click', startVideoOnInteraction);
+                document.removeEventListener('keydown', startVideoOnInteraction);
+                document.removeEventListener('touchstart', startVideoOnInteraction);
+              };
+
+              document.addEventListener('click', startVideoOnInteraction);
+              document.addEventListener('keydown', startVideoOnInteraction);
+              document.addEventListener('touchstart', startVideoOnInteraction);
+            });
+          }
+        } catch (e) {
+          console.log('Video initialization failed:', e);
+        }
+      }
+
+      // Handle video loading errors
+      video.addEventListener('error', function (e) {
+        console.log('Video error:', e);
+        // Try to reload the video after a short delay
+        setTimeout(() => {
+          try {
+            video.load();
+          } catch (err) {
+            console.log('Video reload failed:', err);
+          }
+        }, 1000);
+      });
+
+      // Initialize video
+      initializeVideo();
+
+      // Re-initialize video on page visibility change (fixes back/forward navigation issues)
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden && video.paused) {
+          initializeVideo();
+        }
+      });
+
+      // Handle browser back/forward navigation
+      window.addEventListener('pageshow', function (event) {
+        if (event.persisted && video.paused) {
+          initializeVideo();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
